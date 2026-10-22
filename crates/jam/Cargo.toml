@@ -1,0 +1,10 @@
+[package]
+name = "jam"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rustic_core = { path = "../rustic_core" }
+async-trait = "0.1"
+thiserror = "2.0.19"
+tracing = "0.1.44"

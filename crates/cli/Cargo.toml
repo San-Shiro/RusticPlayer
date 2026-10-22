@@ -1,0 +1,22 @@
+[package]
+name = "cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+thiserror = "2.0.19"
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }
+
+audio = { path = "../audio" }
+sources = { path = "../sources" }
+rustic_core = { path = "../rustic_core" }
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+sha1 = "0.11.0"
+hex = "0.4.3"
+regex = "1.10"
+engine = { version = "0.1.0", path = "../engine" }

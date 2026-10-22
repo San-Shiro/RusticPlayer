@@ -1,0 +1,229 @@
+<svg width="1200" height="920" viewBox="0 0 1200 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Canvas Pattern -->
+    <radialGradient id="token-bg" cx="50%" cy="10%" r="90%">
+      <stop offset="0%" stop-color="#1B122F" />
+      <stop offset="60%" stop-color="#0E0818" />
+      <stop offset="100%" stop-color="#07040B" />
+    </radialGradient>
+
+    <!-- Glass Specimen Fill -->
+    <linearGradient id="token-glass-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#281A45" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#100820" stop-opacity="0.70" />
+    </linearGradient>
+    <linearGradient id="token-specular" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7" />
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="token-cyan-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="token-test-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="920" fill="url(#token-bg)" />
+
+  <!-- Title Header -->
+  <g id="Header" transform="translate(60, 48)">
+    <text x="0" y="24" fill="#A855F7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="2">RUSTICPLAYER DESIGN SYSTEM</text>
+    <text x="0" y="58" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="800">Floating Glass Island Tokens &amp; Geometry</text>
+    <text x="0" y="84" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">Design specs for Figma and GPUI Rust implementation</text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 1. COLOR PALETTE SWATCHES                                -->
+  <!-- ======================================================== -->
+  <g id="Palette-Tokens" transform="translate(60, 160)">
+    <text x="0" y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">1. Core Color Swatches</text>
+
+    <!-- Swatch 1: App Void -->
+    <g transform="translate(0, 20)">
+      <rect width="120" height="70" rx="10" fill="#07040C" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">App Void</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#07040C</text>
+    </g>
+
+    <!-- Swatch 2: Surface Dark -->
+    <g transform="translate(135, 20)">
+      <rect width="120" height="70" rx="10" fill="#0E0919" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Surface Dark</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#0E0919</text>
+    </g>
+
+    <!-- Swatch 3: Card Surface -->
+    <g transform="translate(270, 20)">
+      <rect width="120" height="70" rx="10" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Card Surface</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#140D22</text>
+    </g>
+
+    <!-- Swatch 4: Brand Purple -->
+    <g transform="translate(405, 20)">
+      <rect width="120" height="70" rx="10" fill="#8B5CF6" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Primary Purple</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#8B5CF6</text>
+    </g>
+
+    <!-- Swatch 5: Accent Cyan -->
+    <g transform="translate(540, 20)">
+      <rect width="120" height="70" rx="10" fill="#38BDF8" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Accent Cyan</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#38BDF8</text>
+    </g>
+
+    <!-- Swatch 6: Accent Pink -->
+    <g transform="translate(675, 20)">
+      <rect width="120" height="70" rx="10" fill="#EC4899" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Accent Pink</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#EC4899</text>
+    </g>
+
+    <!-- Swatch 7: Emerald Hi-Res -->
+    <g transform="translate(810, 20)">
+      <rect width="120" height="70" rx="10" fill="#10B981" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Hi-Res Active</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#10B981</text>
+    </g>
+
+    <!-- Swatch 8: Text Primary -->
+    <g transform="translate(945, 20)">
+      <rect width="120" height="70" rx="10" fill="#FFFFFF" />
+      <text x="10" y="90" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Text Primary</text>
+      <text x="10" y="104" fill="#64748B" font-family="monospace" font-size="10">#FFFFFF</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 2. GLASSMORPHISM TOKEN BENCHMARK & LAYER BREAKDOWN       -->
+  <!-- ======================================================== -->
+  <g id="Glass-Breakdown" transform="translate(60, 310)">
+    <text x="0" y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">2. Optical Glass Formula Layers</text>
+
+    <!-- Comparison Stage: Vibrant Pattern Behind Glass -->
+    <g transform="translate(0, 24)">
+      <!-- Underneath Artwork Block -->
+      <rect width="480" height="240" rx="16" fill="url(#token-test-bg)" />
+      <!-- Grid Lines to show refraction/translucency -->
+      <line x1="0" y1="60" x2="480" y2="60" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" />
+      <line x1="0" y1="120" x2="480" y2="120" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" />
+      <line x1="0" y1="180" x2="480" y2="180" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" />
+      <line x1="120" y1="0" x2="120" y2="240" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" />
+      <line x1="240" y1="0" x2="240" y2="240" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" />
+      <line x1="360" y1="0" x2="360" y2="240" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" />
+      <text x="20" y="36" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800">CONTENT PASSING UNDER GLASS</text>
+
+      <!-- Glass Specimen Placed On Top -->
+      <g transform="translate(40, 60)">
+        <!-- Layer 1: Ambient Drop Shadow -->
+        <rect width="400" height="120" rx="20" fill="#000000" opacity="0.6" />
+        <!-- Layer 2: Translucent Tint Fill -->
+        <rect width="400" height="120" rx="20" fill="url(#token-glass-fill)" />
+        <!-- Layer 3: Specular Rim (Top to bottom gradient) -->
+        <rect width="400" height="120" rx="20" fill="none" stroke="url(#token-specular)" stroke-width="1.5" />
+        <!-- Layer 4: Convex Gloss Sheen -->
+        <rect x="2" y="2" width="396" height="56" rx="18" fill="#FFFFFF" fill-opacity="0.1" />
+
+        <!-- Interior Dynamic Capsule -->
+        <rect x="20" y="24" width="360" height="72" rx="14" fill="#06030D" fill-opacity="0.6" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" />
+        <text x="40" y="54" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">TRANS-OPTIC GLASS SPECIMEN</text>
+        <text x="40" y="74" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Content behind is vibrantly refracted with zero muddiness</text>
+      </g>
+    </g>
+
+    <!-- Glass Formula Details Table -->
+    <g transform="translate(520, 24)">
+      <rect width="560" height="240" rx="14" fill="#140D24" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+
+      <text x="24" y="34" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Figma Layer Setup</text>
+      <text x="320" y="34" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">GPUI Rust Mapping</text>
+
+      <line x1="24" y1="46" x2="536" y2="46" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+
+      <!-- Row 1: Fill Tint -->
+      <text x="24" y="72" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">1. Fill Tint</text>
+      <text x="24" y="88" fill="#94A3B8" font-family="monospace" font-size="11">#140D26 @ 42% Opacity</text>
+      <text x="320" y="80" fill="#E2E8F0" font-family="monospace" font-size="11">rgba(0x140D266B)</text>
+
+      <!-- Row 2: Specular Rim -->
+      <text x="24" y="118" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">2. Specular Rim Stroke</text>
+      <text x="24" y="134" fill="#94A3B8" font-family="monospace" font-size="11">1.2px Inside (#FFF 65% → 10%)</text>
+      <text x="320" y="126" fill="#E2E8F0" font-family="monospace" font-size="11">.border_1().border_color(rgba(0xFFFFFF3E))</text>
+
+      <!-- Row 3: Convex Sheen -->
+      <text x="24" y="164" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">3. Convex Lens Gloss</text>
+      <text x="24" y="180" fill="#94A3B8" font-family="monospace" font-size="11">32px Top Bar (#FFF 12% → 0%)</text>
+      <text x="320" y="172" fill="#E2E8F0" font-family="monospace" font-size="11">.h(px(32.0)).bg(rgba(0xFFFFFF0F))</text>
+
+      <!-- Row 4: Drop Shadow -->
+      <text x="24" y="210" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">4. Elevation Shadow</text>
+      <text x="24" y="226" fill="#94A3B8" font-family="monospace" font-size="11">Y: 12px, Blur: 28px, #000 55%</text>
+      <text x="320" y="218" fill="#E2E8F0" font-family="monospace" font-size="11">Elevation::lg()</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 3. GEOMETRY & CORNER RADII TOKENS                        -->
+  <!-- ======================================================== -->
+  <g id="Geometry-Tokens" transform="translate(60, 600)">
+    <text x="0" y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">3. Key Component Dimensions &amp; Geometry</text>
+
+    <!-- Component 1: Floating Dock -->
+    <g transform="translate(0, 20)">
+      <rect width="250" height="90" rx="22" fill="#1A112E" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="18" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Island Dock</text>
+      <text x="18" y="52" fill="#94A3B8" font-family="monospace" font-size="11">Width: Dynamic (1080–1200px)</text>
+      <text x="18" y="68" fill="#94A3B8" font-family="monospace" font-size="11">Height: 76px  |  Radius: 22px</text>
+    </g>
+
+    <!-- Component 2: Dynamic Capsule -->
+    <g transform="translate(270, 20)">
+      <rect width="250" height="90" rx="16" fill="#0C0717" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="18" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Recessed Capsule</text>
+      <text x="18" y="52" fill="#94A3B8" font-family="monospace" font-size="11">Width: 500–560px</text>
+      <text x="18" y="68" fill="#94A3B8" font-family="monospace" font-size="11">Height: 58px  |  Radius: 16px</text>
+    </g>
+
+    <!-- Component 3: Album Card -->
+    <g transform="translate(540, 20)">
+      <rect width="250" height="90" rx="12" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="18" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Album Card</text>
+      <text x="18" y="52" fill="#94A3B8" font-family="monospace" font-size="11">Art: 180×180px  |  Radius: 10px</text>
+      <text x="18" y="68" fill="#94A3B8" font-family="monospace" font-size="11">Card: 208×270px | Radius: 12px</text>
+    </g>
+
+    <!-- Component 4: Play Pill & Thumb -->
+    <g transform="translate(810, 20)">
+      <rect width="270" height="90" rx="12" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="18" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Interactive Controls</text>
+      <text x="18" y="52" fill="#94A3B8" font-family="monospace" font-size="11">Play Button: 30×30px Circle</text>
+      <text x="18" y="68" fill="#94A3B8" font-family="monospace" font-size="11">Playhead Thumb: 12×12px Circle</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 4. TYPOGRAPHY HIERARCHY                                   -->
+  <!-- ======================================================== -->
+  <g id="Typography-Scale" transform="translate(60, 750)">
+    <text x="0" y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">4. Typography Scale</text>
+
+    <g transform="translate(0, 20)">
+      <text x="0" y="28" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">Hero 28px Bold</text>
+      <text x="240" y="28" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">Section 18px SemiBold</text>
+      <text x="500" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Card Title 14px</text>
+      <text x="680" y="28" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Subtitle 12px</text>
+      <text x="820" y="28" fill="#64748B" font-family="monospace" font-size="11">Timestamp 11px Mono</text>
+      <text x="1000" y="28" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1">BADGE 10PX</text>
+    </g>
+  </g>
+</svg>

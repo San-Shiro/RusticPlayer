@@ -1,0 +1,241 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="art-folklore-lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="art-rehbara-sm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E6D3" />
+      <stop offset="50%" stop-color="#CBB499" />
+      <stop offset="100%" stop-color="#7C654D" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="960" fill="#030303" />
+
+  <!-- 1. TOP HEADER -->
+  <g id="Header">
+    <rect width="1440" height="64" fill="#030303" />
+    <g transform="translate(16, 20)">
+      <line x1="0" y1="5" x2="18" y2="5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="12" x2="18" y2="12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="19" x2="18" y2="19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <g transform="translate(36, 0)">
+        <circle cx="12" cy="12" r="11" fill="#FF0000" />
+        <circle cx="12" cy="12" r="7" fill="none" stroke="#FFFFFF" stroke-width="1.4" />
+        <polygon points="10.5,8.5 15.5,12 10.5,15.5" fill="#FFFFFF" />
+        <text x="28" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="18" font-weight="700" letter-spacing="-0.5">Music</text>
+      </g>
+      <!-- Back Arrow (CLICKABLE -> Back to Home) -->
+      <g id="Btn-Back" transform="translate(130, 4)">
+        <path d="M12 4L4 12L12 20M4 12H20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        <path d="M36 4L44 12L36 20M44 12H28" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+    </g>
+
+    <g id="Search-Capsule" transform="translate(220, 12)">
+      <rect width="460" height="40" rx="8" fill="#212121" />
+      <circle cx="20" cy="20" r="5.5" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <line x1="24.5" y1="24.5" x2="28" y2="28" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" />
+      <text x="38" y="25" fill="#888888" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">Search songs, albums, artists, podcasts</text>
+    </g>
+
+    <g transform="translate(1360, 18)">
+      <circle cx="12" cy="14" r="8" stroke="#FFFFFF" stroke-width="1.6" fill="none" />
+      <polyline points="12,10 12,14 15,14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none" />
+      <circle cx="48" cy="14" r="14" fill="#0284C7" />
+      <text x="43" y="19" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="700">K</text>
+    </g>
+  </g>
+
+  <!-- 2. SLIM SIDEBAR -->
+  <g id="Slim-Sidebar" transform="translate(0, 64)">
+    <rect width="72" height="824" fill="#030303" />
+    <g id="Nav-Home" transform="translate(0, 16)">
+      <path d="M36 12L24 22V36H30V26H42V36H48V22L36 12Z" fill="#AAAAAA" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Home</text>
+    </g>
+    <g id="Nav-Explore" transform="translate(0, 80)">
+      <circle cx="36" cy="24" r="10" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <polygon points="39,19 36,29 33,24" fill="#AAAAAA" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Explore</text>
+    </g>
+    <g id="Nav-Library" transform="translate(0, 144)">
+      <path d="M28 14H44V34L36 29L28 34V14Z" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Library</text>
+    </g>
+  </g>
+
+  <!-- 3. MAIN ALBUM VIEW: TWO-COLUMN LAYOUT -->
+  <g id="Album-Content" transform="translate(100, 84)">
+
+    <!-- LEFT COLUMN: ALBUM HERO SHOWCASE -->
+    <g id="Album-Hero-Panel" transform="translate(40, 20)">
+      <!-- Artist Badge Link -->
+      <text x="80" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="500">🍂 Taylor Swift</text>
+
+      <!-- Large Square Album Artwork (240x240) -->
+      <g transform="translate(0, 36)">
+        <rect width="240" height="240" rx="8" fill="url(#art-folklore-lg)" />
+        <line x1="45" y1="240" x2="45" y2="40" stroke="#0F172A" stroke-width="9" />
+        <line x1="85" y1="240" x2="85" y2="25" stroke="#1E293B" stroke-width="12" />
+        <line x1="135" y1="240" x2="135" y2="55" stroke="#0F172A" stroke-width="8" />
+        <line x1="185" y1="240" x2="185" y2="20" stroke="#1E293B" stroke-width="14" />
+      </g>
+
+      <!-- Album Title -->
+      <text x="120" y="324" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="28" font-weight="800">folklore</text>
+
+      <!-- Metadata -->
+      <g transform="translate(68, 338)">
+        <rect width="14" height="14" rx="2" fill="#444444" />
+        <text x="3" y="11" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="700">E</text>
+        <text x="20" y="11" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">Album • 2020</text>
+      </g>
+      <text x="120" y="370" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">16 songs • 1 hour, 3 minutes</text>
+
+      <!-- Description -->
+      <text x="120" y="400" text-anchor="middle" fill="#717171" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Folklore is the eighth studio album by the</text>
+      <text x="120" y="416" text-anchor="middle" fill="#717171" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">American singer-songwriter Taylor Swift. It...</text>
+
+      <!-- Action Buttons Row (Download, Bookmark, Big Play, Share, More) -->
+      <g transform="translate(0, 440)">
+        <!-- Download -->
+        <circle cx="20" cy="24" r="18" fill="#212121" />
+        <path d="M20 16V26M20 26L16 22M20 26L24 22M14 29H26" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none" />
+        <!-- Bookmark -->
+        <circle cx="68" cy="24" r="18" fill="#212121" />
+        <path d="M64 16H72V30L68 27L64 30V16Z" stroke="#FFFFFF" stroke-width="1.6" fill="none" />
+        <!-- Big White Circular Play Button -->
+        <circle cx="120" cy="24" r="24" fill="#FFFFFF" />
+        <polygon points="115,14 130,24 115,34" fill="#000000" />
+        <!-- Share -->
+        <circle cx="172" cy="24" r="18" fill="#212121" />
+        <path d="M168 20L174 16L180 20M174 16V28" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none" />
+        <!-- 3-Dots -->
+        <circle cx="220" cy="24" r="18" fill="#212121" />
+        <circle cx="214" cy="24" r="1.5" fill="#FFFFFF" /><circle cx="220" cy="24" r="1.5" fill="#FFFFFF" /><circle cx="226" cy="24" r="1.5" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- RIGHT COLUMN: 16 TRACK LIST -->
+    <g id="Album-Tracklist" transform="translate(380, 20)">
+
+      <!-- Track 1: the 1 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">1</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">the 1</text>
+        <rect x="32" y="32" width="12" height="12" rx="2" fill="#444444" />
+        <text x="35" y="41" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="8" font-weight="700">E</text>
+        <text x="48" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">126M plays</text>
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">3:31</text>
+      </g>
+
+      <!-- Track 2: cardigan -->
+      <g transform="translate(0, 56)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">2</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">cardigan</text>
+        <text x="32" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">438M plays</text>
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">4:00</text>
+      </g>
+
+      <!-- Track 3: the last great american dynasty -->
+      <g transform="translate(0, 112)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">3</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">the last great american dynasty</text>
+        <rect x="32" y="32" width="12" height="12" rx="2" fill="#444444" />
+        <text x="35" y="41" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="8" font-weight="700">E</text>
+        <text x="48" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">54M plays</text>
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">3:51</text>
+      </g>
+
+      <!-- Track 4: exile (feat. Bon Iver) [ACTIVE / PLAYING IN REF] -->
+      <g id="Track-Exile" transform="translate(0, 168)">
+        <rect x="-16" y="0" width="840" height="52" rx="6" fill="#181818" />
+        <!-- Play Icon replacing number -->
+        <polygon points="0,16 12,24 0,32" fill="#FFFFFF" />
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="600">exile (feat. Bon Iver)</text>
+        <text x="32" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">224M plays</text>
+        <!-- Thumbs up/down + 3-dots -->
+        <g transform="translate(680, 18)">
+          <path d="M1 10H3V4H1V10ZM11 4.3C10.8 4 10.5 3.7 10 3.7H7.3L7.7 1.7L7.7 1.5C7.7 1.3 7.6 1.1 7.5 1L7 0.5L4.2 3.2C4.1 3.4 4 3.6 4 3.9V9.5C4 9.9 4.3 10.2 4.7 10.2H8.3C8.7 10.2 9.1 9.9 9.3 9.6L10.7 6.2V4.8H11V4.3Z" fill="#AAAAAA" />
+          <path d="M8 1H3C2.7 1 2.3 1.3 2.1 1.6L0.6 5.1C0.5 5.3 0.5 5.4 0.5 5.5V6.5C0.5 6.9 0.8 7.2 1.2 7.2H3.8L3.5 9.2V9.3C3.5 9.5 3.6 9.7 3.7 9.8L4.2 10.3L6.9 7.6C7 7.4 7.1 7.2 7.1 6.9V1.4C7.1 1.2 7 1 6.8 1M8 1V6.5H10V1H8Z" transform="translate(30, 0)" fill="#AAAAAA" />
+          <circle cx="60" cy="6" r="1.5" fill="#AAAAAA" /><circle cx="66" cy="6" r="1.5" fill="#AAAAAA" /><circle cx="72" cy="6" r="1.5" fill="#AAAAAA" />
+        </g>
+        <text x="800" y="28" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">4:16</text>
+      </g>
+
+      <!-- Track 5: my tears ricochet -->
+      <g transform="translate(0, 226)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">5</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">my tears ricochet</text>
+        <text x="32" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">119M plays</text>
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">4:16</text>
+      </g>
+
+      <!-- Track 6: mirrorball -->
+      <g transform="translate(0, 282)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">6</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">mirrorball</text>
+        <text x="32" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">60M plays</text>
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">3:29</text>
+      </g>
+
+      <!-- Track 7: seven -->
+      <g transform="translate(0, 338)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">7</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">seven</text>
+        <text x="32" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">46M plays</text>
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">3:29</text>
+      </g>
+
+      <!-- Track 8: august -->
+      <g transform="translate(0, 394)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">8</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">august</text>
+        <text x="32" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">287M plays</text>
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">4:22</text>
+      </g>
+
+      <!-- Track 9: this is me trying -->
+      <g transform="translate(0, 450)">
+        <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">9</text>
+        <text x="32" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">this is me trying</text>
+        <text x="32" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">53M plays</text>
+        <!-- Liked Thumb icon -->
+        <path d="M1 10H3V4H1V10ZM11 4.3C10.8 4 10.5 3.7 10 3.7H7.3L7.7 1.7L7.7 1.5C7.7 1.3 7.6 1.1 7.5 1L7 0.5L4.2 3.2C4.1 3.4 4 3.6 4 3.9V9.5C4 9.9 4.3 10.2 4.7 10.2H8.3C8.7 10.2 9.1 9.9 9.3 9.6L10.7 6.2V4.8H11V4.3Z" transform="translate(680, 18)" fill="#FFFFFF" />
+        <text x="800" y="28" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13">3:16</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. PINNED BOTTOM PLAYER BAR -->
+  <g id="Bottom-Player-Bar" transform="translate(0, 888)">
+    <rect width="1440" height="72" fill="#212121" />
+    <g id="Scrubber">
+      <rect width="1440" height="2" fill="#383838" />
+      <rect width="240" height="2" fill="#FF0000" />
+      <circle cx="240" cy="1" r="5" fill="#FF0000" />
+    </g>
+    <g id="Left-Controls" transform="translate(16, 20)">
+      <polygon points="12,4 2,12 12,20" fill="#FFFFFF" />
+      <rect x="0" y="4" width="2" height="16" fill="#FFFFFF" />
+      <g transform="translate(32, 0)"><rect x="4" y="4" width="4" height="16" rx="1" fill="#FFFFFF" /><rect x="14" y="4" width="4" height="16" rx="1" fill="#FFFFFF" /></g>
+      <g transform="translate(68, 0)"><polygon points="2,4 12,12 2,20" fill="#FFFFFF" /><rect x="12" y="4" width="2" height="16" fill="#FFFFFF" /></g>
+      <text x="96" y="17" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">0:46 / 2:54</text>
+    </g>
+    <g id="Current-Track-Card" transform="translate(380, 12)">
+      <rect width="48" height="48" rx="2" fill="url(#art-rehbara-sm)" />
+      <text x="60" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Rehbara</text>
+      <text x="60" y="38" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Abhijeet Srivastava &amp; Shayra Apoorva • Rehbara • 2026</text>
+    </g>
+    <g id="Right-Controls" transform="translate(1160, 20)">
+      <path d="M2 6H5L9 2V16L5 12H2V6Z" fill="#AAAAAA" />
+      <g transform="translate(18, 7)"><rect width="70" height="3" rx="1.5" fill="#555555" /><rect width="40" height="3" rx="1.5" fill="#FFFFFF" /><circle cx="40" cy="1.5" r="4.5" fill="#FFFFFF" /></g>
+      <g transform="translate(110, 0)"><path d="M14 2L16 4L14 6M2 7V6C2 4.9 2.9 4 4 4H16M4 14L2 12L4 10M16 9V10C16 11.1 15.1 12 14 12H2" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" /></g>
+      <g transform="translate(142, 0)"><path d="M2 12L5 12L10 4L15 4M13 2L15 4L13 6M2 4L4 4M10 12L15 12M13 10L15 12L13 14" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" /></g>
+      <g id="Chevron-Expand" transform="translate(174, 0)"><polyline points="2,14 7,9 12,14" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" /></g>
+    </g>
+  </g>
+</svg>

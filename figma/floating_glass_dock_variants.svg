@@ -1,0 +1,438 @@
+<svg width="1200" height="1100" viewBox="0 0 1200 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Canvas Pattern -->
+    <radialGradient id="bg-glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1E1435" />
+      <stop offset="100%" stop-color="#0A0612" />
+    </radialGradient>
+
+    <!-- Album Mock Underneath for Translucency Proof -->
+    <linearGradient id="mock-art-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="mock-art-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    <linearGradient id="mock-art-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <!-- Glass Fill Gradients -->
+    <!-- Concept A: VisionOS Frosted Acrylic -->
+    <linearGradient id="glass-a-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18" />
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="glass-a-body" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#1B1430" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#0E091B" stop-opacity="0.75" />
+    </linearGradient>
+    <linearGradient id="glass-a-stroke" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65" />
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.10" />
+    </linearGradient>
+
+    <!-- Concept B: Cyberpunk Neon Prism Glass -->
+    <linearGradient id="glass-b-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24143D" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#120A22" stop-opacity="0.70" />
+      <stop offset="100%" stop-color="#0F182E" stop-opacity="0.75" />
+    </linearGradient>
+    <linearGradient id="glass-b-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.70" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.65" />
+    </linearGradient>
+
+    <!-- Concept C: Smoked Obsidian Glass -->
+    <linearGradient id="glass-c-body" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A22" stop-opacity="0.82" />
+      <stop offset="100%" stop-color="#0B0B0E" stop-opacity="0.90" />
+    </linearGradient>
+    <linearGradient id="glass-c-stroke" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.08" />
+    </linearGradient>
+
+    <!-- Concept D: Minimalist Crystal Ice -->
+    <linearGradient id="glass-d-body" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.04" />
+    </linearGradient>
+    <linearGradient id="glass-d-stroke" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.50" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.15" />
+    </linearGradient>
+
+    <!-- Play Button Gradient -->
+    <linearGradient id="play-grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+    <linearGradient id="play-grad-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+
+    <!-- Scrubber Gradient -->
+    <linearGradient id="scrubber-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filters -->
+    <filter id="shadow-dock" x="-10%" y="-20%" width="120%" height="160%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.65" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.40" />
+    </filter>
+
+    <filter id="glow-play" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#A855F7" flood-opacity="0.75" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.30" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="1100" fill="url(#bg-glow)" />
+
+  <!-- Grid Header -->
+  <text x="50" y="55" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700">RusticPlayer • Floating Dynamic Glass Island Dock</text>
+  <text x="50" y="85" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">Figma High-Fidelity Design System &amp; Vector Sheet • Import directly into Figma (Paste or Drag &amp; Drop)</text>
+
+  <!-- ========================================================================= -->
+  <!-- CONCEPT 1: VisionOS Frosted Acrylic (Recommended) -->
+  <!-- ========================================================================= -->
+  <g id="Concept-1-VisionOS-Frosted-Acrylic" transform="translate(120, 130)">
+    <text x="0" y="-15" fill="#A855F7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="1">CONCEPT A: VISIONOS FROSTED ACRYLIC (RECOMMENDED)</text>
+    <text x="460" y="-15" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Specular Top Rim • 40% Translucency • Recessed Dynamic Island • Content Bleed</text>
+
+    <!-- Underlying Mock Content (Proves Translucency) -->
+    <g id="Underlying-Content-A" opacity="0.85">
+      <rect x="40" y="-5" width="80" height="80" rx="12" fill="url(#mock-art-1)" />
+      <rect x="220" y="10" width="100" height="70" rx="12" fill="url(#mock-art-2)" />
+      <rect x="480" y="-10" width="90" height="85" rx="12" fill="url(#mock-art-3)" />
+      <rect x="720" y="5" width="80" height="75" rx="12" fill="url(#mock-art-1)" />
+      <rect x="850" y="-5" width="85" height="80" rx="12" fill="url(#mock-art-2)" />
+    </g>
+
+    <!-- Floating Dock Outer Capsule -->
+    <g id="Dock-A" filter="url(#shadow-dock)">
+      <!-- Glass Base Tint -->
+      <rect x="0" y="0" width="960" height="68" rx="34" fill="url(#glass-a-body)" />
+      <!-- Specular Surface Fill Gradient -->
+      <rect x="0" y="0" width="960" height="68" rx="34" fill="url(#glass-a-fill)" />
+      <!-- 1px Specular Border -->
+      <rect x="0.5" y="0.5" width="959" height="67" rx="33.5" stroke="url(#glass-a-stroke)" stroke-width="1" />
+      <!-- Upper Convex Lens Gloss Sheen (top 32px reflection) -->
+      <path d="M 34 1 Q 480 5 926 1 C 944 1 959 15 959 33 L 1 33 C 1 15 16 1 34 1 Z" fill="#FFFFFF" opacity="0.07" />
+    </g>
+
+    <!-- Left Transport Cluster -->
+    <g id="Transport-A" transform="translate(24, 15)">
+      <!-- Prev Button -->
+      <g id="Btn-Prev-A" transform="translate(0, 7)">
+        <path d="M 16 4 L 8 12 L 16 20 Z M 24 4 L 16 12 L 24 20 Z" fill="#E2E8F0" />
+      </g>
+      <!-- Play Button (Glowing 38px Circular) -->
+      <g id="Btn-Play-A" transform="translate(36, 0)" filter="url(#glow-play)">
+        <circle cx="19" cy="19" r="19" fill="url(#play-grad-purple)" />
+        <path d="M 15 12 L 26 19 L 15 26 Z" fill="#FFFFFF" />
+      </g>
+      <!-- Next Button -->
+      <g id="Btn-Next-A" transform="translate(86, 7)">
+        <path d="M 8 4 L 16 12 L 8 20 Z M 16 4 L 24 12 L 16 20 Z" fill="#E2E8F0" />
+      </g>
+    </g>
+
+    <!-- Center: Sculpted Recessed Dynamic Island -->
+    <g id="Dynamic-Island-A" transform="translate(160, 8)">
+      <!-- Island Smoked Glass Well -->
+      <rect x="0" y="0" width="500" height="52" rx="18" fill="#06030F" fill-opacity="0.55" />
+      <rect x="0.5" y="0.5" width="499" height="51" rx="17.5" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1" />
+      <!-- Mini Artwork Thumbnail (40x40) -->
+      <g id="Island-Artwork-A" transform="translate(6, 6)">
+        <rect width="40" height="40" rx="8" fill="url(#mock-art-1)" />
+        <circle cx="20" cy="20" r="12" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5" />
+        <circle cx="20" cy="20" r="6" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5" />
+      </g>
+      <!-- Track Title &amp; Artist Stack -->
+      <text x="56" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Midnight Circuit</text>
+      <text x="56" y="34" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Vektor Prime • Neon Horizon</text>
+      <!-- Time Elapsed Badge -->
+      <text x="440" y="21" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="end">1:48 / 3:45</text>
+      <!-- Hairline Scrubber Track along bottom boundary -->
+      <g id="Island-Scrubber-A" transform="translate(56, 42)">
+        <rect width="430" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.15" />
+        <rect width="210" height="3" rx="1.5" fill="url(#scrubber-purple)" />
+        <circle cx="210" cy="1.5" r="4.5" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- Right: Utility Controls &amp; Glass Pill -->
+    <g id="Utilities-A" transform="translate(680, 19)">
+      <!-- Heart (Liked) -->
+      <path d="M 12 5 C 9 2 4 4 4 8.5 C 4 13 12 18 12 18 C 12 18 20 13 20 8.5 C 20 4 15 2 12 5 Z" fill="#F43F5E" />
+      <!-- Queue Icon -->
+      <g transform="translate(36, 4)">
+        <rect x="0" y="0" width="16" height="2" rx="1" fill="#CBD5E1" />
+        <rect x="0" y="5" width="16" height="2" rx="1" fill="#CBD5E1" />
+        <rect x="0" y="10" width="10" height="2" rx="1" fill="#CBD5E1" />
+      </g>
+      <!-- Volume Speaker -->
+      <g transform="translate(70, 4)">
+        <path d="M 2 5 L 6 5 L 10 2 L 10 14 L 6 11 L 2 11 Z" fill="#CBD5E1" />
+        <path d="M 13 4 C 14.5 6 14.5 10 13 12" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+      <!-- Volume Slider -->
+      <g transform="translate(92, 11)">
+        <rect width="75" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.2" />
+        <rect width="60" height="3" rx="1.5" fill="url(#scrubber-purple)" />
+        <circle cx="60" cy="1.5" r="4" fill="#FFFFFF" />
+      </g>
+      <!-- Interactive Glass Mode Badge (Glowing Crystal Pill) -->
+      <g id="Glass-Badge-A" transform="translate(185, -2)">
+        <rect width="75" height="26" rx="13" fill="#A855F7" fill-opacity="0.22" />
+        <rect x="0.5" y="0.5" width="74" height="25" rx="12.5" stroke="#C084FC" stroke-opacity="0.65" stroke-width="1" />
+        <text x="37" y="17" fill="#E9D5FF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">✨ Glass</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- CONCEPT 2: Cyberpunk Neon Prism Glass -->
+  <!-- ========================================================================= -->
+  <g id="Concept-2-Cyberpunk-Neon-Prism" transform="translate(120, 370)">
+    <text x="0" y="-15" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="1">CONCEPT B: CYBERPUNK NEON PRISM GLASS</text>
+    <text x="460" y="-15" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Chromatic Gradient Rim • Vivid Cyan/Violet Accents • High Contrast Dark Body</text>
+
+    <!-- Underlying Content B -->
+    <g id="Underlying-Content-B" opacity="0.85">
+      <rect x="90" y="-5" width="85" height="80" rx="12" fill="url(#mock-art-2)" />
+      <rect x="340" y="10" width="110" height="70" rx="12" fill="url(#mock-art-1)" />
+      <rect x="620" y="-10" width="90" height="85" rx="12" fill="url(#mock-art-3)" />
+      <rect x="800" y="5" width="80" height="75" rx="12" fill="url(#mock-art-2)" />
+    </g>
+
+    <!-- Floating Dock Outer Capsule -->
+    <g id="Dock-B" filter="url(#shadow-dock)">
+      <rect x="0" y="0" width="960" height="68" rx="34" fill="url(#glass-b-body)" />
+      <rect x="0.5" y="0.5" width="959" height="67" rx="33.5" stroke="url(#glass-b-stroke)" stroke-width="1.2" />
+      <!-- Specular Gloss Arc -->
+      <path d="M 34 1 Q 480 6 926 1 C 944 1 959 15 959 30 L 1 30 C 1 15 16 1 34 1 Z" fill="#FFFFFF" opacity="0.09" />
+    </g>
+
+    <!-- Transport Cluster -->
+    <g id="Transport-B" transform="translate(24, 15)">
+      <g transform="translate(0, 7)">
+        <path d="M 16 4 L 8 12 L 16 20 Z M 24 4 L 16 12 L 24 20 Z" fill="#94A3B8" />
+      </g>
+      <g transform="translate(36, 0)">
+        <circle cx="19" cy="19" r="19" fill="url(#play-grad-cyan)" />
+        <path d="M 15 12 L 26 19 L 15 26 Z" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(86, 7)">
+        <path d="M 8 4 L 16 12 L 8 20 Z M 16 4 L 24 12 L 16 20 Z" fill="#94A3B8" />
+      </g>
+    </g>
+
+    <!-- Dynamic Island -->
+    <g id="Dynamic-Island-B" transform="translate(160, 8)">
+      <rect x="0" y="0" width="500" height="52" rx="18" fill="#090514" fill-opacity="0.65" />
+      <rect x="0.5" y="0.5" width="499" height="51" rx="17.5" stroke="#38BDF8" stroke-opacity="0.25" stroke-width="1" />
+      <g transform="translate(6, 6)">
+        <rect width="40" height="40" rx="8" fill="url(#mock-art-2)" />
+      </g>
+      <text x="56" y="21" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Cybernetic Drift</text>
+      <text x="56" y="34" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Tokyo Rose • Akuma II</text>
+      <text x="440" y="21" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="end">0:32 / 3:30</text>
+      <g transform="translate(56, 42)">
+        <rect width="430" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.15" />
+        <rect width="70" height="3" rx="1.5" fill="#38BDF8" />
+        <circle cx="70" cy="1.5" r="4.5" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- Utilities -->
+    <g id="Utilities-B" transform="translate(680, 19)">
+      <path d="M 12 5 C 9 2 4 4 4 8.5 C 4 13 12 18 12 18 C 12 18 20 13 20 8.5 C 20 4 15 2 12 5 Z" fill="#64748B" />
+      <g transform="translate(36, 4)">
+        <rect x="0" y="0" width="16" height="2" rx="1" fill="#94A3B8" />
+        <rect x="0" y="5" width="16" height="2" rx="1" fill="#94A3B8" />
+        <rect x="0" y="10" width="10" height="2" rx="1" fill="#94A3B8" />
+      </g>
+      <g transform="translate(70, 4)">
+        <path d="M 2 5 L 6 5 L 10 2 L 10 14 L 6 11 L 2 11 Z" fill="#94A3B8" />
+        <path d="M 13 4 C 14.5 6 14.5 10 13 12" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+      <g transform="translate(92, 11)">
+        <rect width="75" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.2" />
+        <rect width="45" height="3" rx="1.5" fill="#38BDF8" />
+        <circle cx="45" cy="1.5" r="4" fill="#FFFFFF" />
+      </g>
+      <g id="Glass-Badge-B" transform="translate(185, -2)">
+        <rect width="75" height="26" rx="13" fill="#38BDF8" fill-opacity="0.18" />
+        <rect x="0.5" y="0.5" width="74" height="25" rx="12.5" stroke="#38BDF8" stroke-opacity="0.5" stroke-width="1" />
+        <text x="37" y="17" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">⚡ Neon</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- CONCEPT 3: Smoked Obsidian Dark Glass -->
+  <!-- ========================================================================= -->
+  <g id="Concept-3-Smoked-Obsidian-Glass" transform="translate(120, 610)">
+    <text x="0" y="-15" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="1">CONCEPT C: SMOKED OBSIDIAN DARK GLASS</text>
+    <text x="460" y="-15" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Stealth Matte Finish • Subtle Deep Tint • Minimalist Ambient Glow</text>
+
+    <!-- Underlying Content C -->
+    <g id="Underlying-Content-C" opacity="0.85">
+      <rect x="140" y="-5" width="90" height="80" rx="12" fill="url(#mock-art-3)" />
+      <rect x="420" y="10" width="100" height="70" rx="12" fill="url(#mock-art-2)" />
+      <rect x="700" y="-10" width="85" height="85" rx="12" fill="url(#mock-art-1)" />
+    </g>
+
+    <!-- Floating Dock Outer Capsule -->
+    <g id="Dock-C" filter="url(#shadow-dock)">
+      <rect x="0" y="0" width="960" height="68" rx="34" fill="url(#glass-c-body)" />
+      <rect x="0.5" y="0.5" width="959" height="67" rx="33.5" stroke="url(#glass-c-stroke)" stroke-width="1" />
+    </g>
+
+    <!-- Transport Cluster -->
+    <g id="Transport-C" transform="translate(24, 15)">
+      <g transform="translate(0, 7)">
+        <path d="M 16 4 L 8 12 L 16 20 Z M 24 4 L 16 12 L 24 20 Z" fill="#94A3B8" />
+      </g>
+      <g transform="translate(36, 0)">
+        <circle cx="19" cy="19" r="19" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1" />
+        <path d="M 15 12 L 26 19 L 15 26 Z" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(86, 7)">
+        <path d="M 8 4 L 16 12 L 8 20 Z M 16 4 L 24 12 L 16 20 Z" fill="#94A3B8" />
+      </g>
+    </g>
+
+    <!-- Dynamic Island -->
+    <g id="Dynamic-Island-C" transform="translate(160, 8)">
+      <rect x="0" y="0" width="500" height="52" rx="18" fill="#000000" fill-opacity="0.45" />
+      <rect x="0.5" y="0.5" width="499" height="51" rx="17.5" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+      <g transform="translate(6, 6)">
+        <rect width="40" height="40" rx="8" fill="url(#mock-art-3)" />
+      </g>
+      <text x="56" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Analog Overdrive</text>
+      <text x="56" y="34" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Red Distortion • High Voltage</text>
+      <text x="440" y="21" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="end">2:14 / 4:10</text>
+      <g transform="translate(56, 42)">
+        <rect width="430" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.10" />
+        <rect width="230" height="3" rx="1.5" fill="#E2E8F0" />
+        <circle cx="230" cy="1.5" r="4.5" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- Utilities -->
+    <g id="Utilities-C" transform="translate(680, 19)">
+      <path d="M 12 5 C 9 2 4 4 4 8.5 C 4 13 12 18 12 18 C 12 18 20 13 20 8.5 C 20 4 15 2 12 5 Z" fill="#64748B" />
+      <g transform="translate(36, 4)">
+        <rect x="0" y="0" width="16" height="2" rx="1" fill="#64748B" />
+        <rect x="0" y="5" width="16" height="2" rx="1" fill="#64748B" />
+        <rect x="0" y="10" width="10" height="2" rx="1" fill="#64748B" />
+      </g>
+      <g transform="translate(70, 4)">
+        <path d="M 2 5 L 6 5 L 10 2 L 10 14 L 6 11 L 2 11 Z" fill="#64748B" />
+      </g>
+      <g transform="translate(92, 11)">
+        <rect width="75" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.15" />
+        <rect width="50" height="3" rx="1.5" fill="#E2E8F0" />
+        <circle cx="50" cy="1.5" r="4" fill="#FFFFFF" />
+      </g>
+      <g id="Glass-Badge-C" transform="translate(185, -2)">
+        <rect width="75" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.08" />
+        <rect x="0.5" y="0.5" width="74" height="25" rx="12.5" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" />
+        <text x="37" y="17" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">💎 Solid</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- CONCEPT 4: Minimalist Luminescent Ice Glass -->
+  <!-- ========================================================================= -->
+  <g id="Concept-4-Minimalist-Luminescent-Ice" transform="translate(120, 850)">
+    <text x="0" y="-15" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="1">CONCEPT D: MINIMALIST LUMINESCENT ICE GLASS</text>
+    <text x="460" y="-15" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Ultra-Clean Pure Glass • Crisp White Specular Highlights • Zero Tint Clutter</text>
+
+    <!-- Underlying Content D -->
+    <g id="Underlying-Content-D" opacity="0.85">
+      <rect x="50" y="-5" width="80" height="80" rx="12" fill="url(#mock-art-1)" />
+      <rect x="300" y="10" width="100" height="70" rx="12" fill="url(#mock-art-3)" />
+      <rect x="580" y="-10" width="90" height="85" rx="12" fill="url(#mock-art-2)" />
+      <rect x="820" y="5" width="80" height="75" rx="12" fill="url(#mock-art-1)" />
+    </g>
+
+    <!-- Floating Dock Outer Capsule -->
+    <g id="Dock-D" filter="url(#shadow-dock)">
+      <rect x="0" y="0" width="960" height="68" rx="34" fill="url(#glass-d-body)" />
+      <rect x="0.5" y="0.5" width="959" height="67" rx="33.5" stroke="url(#glass-d-stroke)" stroke-width="1.2" />
+      <path d="M 34 1 Q 480 5 926 1 C 944 1 959 15 959 32 L 1 32 C 1 15 16 1 34 1 Z" fill="#FFFFFF" opacity="0.08" />
+    </g>
+
+    <!-- Transport Cluster -->
+    <g id="Transport-D" transform="translate(24, 15)">
+      <g transform="translate(0, 7)">
+        <path d="M 16 4 L 8 12 L 16 20 Z M 24 4 L 16 12 L 24 20 Z" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(36, 0)">
+        <circle cx="19" cy="19" r="19" fill="#FFFFFF" />
+        <path d="M 15 12 L 26 19 L 15 26 Z" fill="#0A0612" />
+      </g>
+      <g transform="translate(86, 7)">
+        <path d="M 8 4 L 16 12 L 8 20 Z M 16 4 L 24 12 L 16 20 Z" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- Dynamic Island -->
+    <g id="Dynamic-Island-D" transform="translate(160, 8)">
+      <rect x="0" y="0" width="500" height="52" rx="18" fill="#FFFFFF" fill-opacity="0.08" />
+      <rect x="0.5" y="0.5" width="499" height="51" rx="17.5" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1" />
+      <g transform="translate(6, 6)">
+        <rect width="40" height="40" rx="8" fill="url(#mock-art-1)" />
+      </g>
+      <text x="56" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Golden Hour</text>
+      <text x="56" y="34" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Maya Cruz • Solstice</text>
+      <text x="440" y="21" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" text-anchor="end">3:12 / 3:55</text>
+      <g transform="translate(56, 42)">
+        <rect width="430" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.20" />
+        <rect width="345" height="3" rx="1.5" fill="#FFFFFF" />
+        <circle cx="345" cy="1.5" r="4.5" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- Utilities -->
+    <g id="Utilities-D" transform="translate(680, 19)">
+      <path d="M 12 5 C 9 2 4 4 4 8.5 C 4 13 12 18 12 18 C 12 18 20 13 20 8.5 C 20 4 15 2 12 5 Z" fill="#F43F5E" />
+      <g transform="translate(36, 4)">
+        <rect x="0" y="0" width="16" height="2" rx="1" fill="#FFFFFF" />
+        <rect x="0" y="5" width="16" height="2" rx="1" fill="#FFFFFF" />
+        <rect x="0" y="10" width="10" height="2" rx="1" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(70, 4)">
+        <path d="M 2 5 L 6 5 L 10 2 L 10 14 L 6 11 L 2 11 Z" fill="#FFFFFF" />
+        <path d="M 13 4 C 14.5 6 14.5 10 13 12" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+      <g transform="translate(92, 11)">
+        <rect width="75" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.25" />
+        <rect width="60" height="3" rx="1.5" fill="#FFFFFF" />
+        <circle cx="60" cy="1.5" r="4" fill="#FFFFFF" />
+      </g>
+      <g id="Glass-Badge-D" transform="translate(185, -2)">
+        <rect width="75" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.15" />
+        <rect x="0.5" y="0.5" width="74" height="25" rx="12.5" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1" />
+        <text x="37" y="17" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">✨ Ice</text>
+      </g>
+    </g>
+  </g>
+</svg>

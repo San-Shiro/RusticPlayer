@@ -1,0 +1,260 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Rehbara Master Artwork Gradient & Sketch Simulation -->
+    <linearGradient id="art-rehbara-hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF0E6" />
+      <stop offset="50%" stop-color="#D2B48C" />
+      <stop offset="100%" stop-color="#8B7355" />
+    </linearGradient>
+    <linearGradient id="art-barsaat-thumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="art-humdum-thumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="art-sajni-thumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+    <linearGradient id="art-idhar-thumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEDD5" />
+      <stop offset="100%" stop-color="#C2410C" />
+    </linearGradient>
+    <linearGradient id="art-saawali-thumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <linearGradient id="art-faasle-thumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="960" fill="#030303" />
+
+  <!-- 1. TOP HEADER -->
+  <g id="Header">
+    <rect width="1440" height="64" fill="#030303" />
+    <g transform="translate(16, 20)">
+      <line x1="0" y1="5" x2="18" y2="5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="12" x2="18" y2="12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="19" x2="18" y2="19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <g transform="translate(36, 0)">
+        <circle cx="12" cy="12" r="11" fill="#FF0000" />
+        <circle cx="12" cy="12" r="7" fill="none" stroke="#FFFFFF" stroke-width="1.4" />
+        <polygon points="10.5,8.5 15.5,12 10.5,15.5" fill="#FFFFFF" />
+        <text x="28" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="18" font-weight="700" letter-spacing="-0.5">Music</text>
+      </g>
+      <!-- Back Arrow -->
+      <g id="Btn-Back" transform="translate(130, 4)">
+        <path d="M12 4L4 12L12 20M4 12H20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+    </g>
+
+    <g id="Search-Capsule" transform="translate(220, 12)">
+      <rect width="400" height="40" rx="8" fill="#212121" />
+      <circle cx="20" cy="20" r="5.5" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <line x1="24.5" y1="24.5" x2="28" y2="28" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" />
+      <text x="38" y="25" fill="#888888" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">Search songs, albums, artists, podcasts</text>
+    </g>
+
+    <!-- Center Song / Video Pill Toggle (Exact from Screenshot 3) -->
+    <g id="Song-Video-Toggle" transform="translate(660, 16)">
+      <rect width="128" height="32" rx="16" fill="#212121" />
+      <rect width="64" height="32" rx="16" fill="#383838" />
+      <text x="18" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="600">Song</text>
+      <text x="82" y="21" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Video</text>
+    </g>
+
+    <g transform="translate(1360, 18)">
+      <circle cx="12" cy="14" r="8" stroke="#FFFFFF" stroke-width="1.6" fill="none" />
+      <polyline points="12,10 12,14 15,14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none" />
+      <circle cx="48" cy="14" r="14" fill="#0284C7" />
+      <text x="43" y="19" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="700">K</text>
+    </g>
+  </g>
+
+  <!-- 2. SLIM SIDEBAR -->
+  <g id="Slim-Sidebar" transform="translate(0, 64)">
+    <rect width="72" height="824" fill="#030303" />
+    <g id="Nav-Home" transform="translate(0, 16)">
+      <path d="M36 12L24 22V36H30V26H42V36H48V22L36 12Z" fill="#AAAAAA" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Home</text>
+    </g>
+    <g id="Nav-Explore" transform="translate(0, 80)">
+      <circle cx="36" cy="24" r="10" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <polygon points="39,19 36,29 33,24" fill="#AAAAAA" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Explore</text>
+    </g>
+    <g id="Nav-Library" transform="translate(0, 144)">
+      <path d="M28 14H44V34L36 29L28 34V14Z" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Library</text>
+    </g>
+  </g>
+
+  <!-- 3. MAIN PLAYER VIEW: TWO-COLUMN LAYOUT -->
+  <g id="Player-Content" transform="translate(100, 80)">
+
+    <!-- LEFT COLUMN: HUGE ALBUM ARTWORK (520x520) -->
+    <g id="Big-Cover-Art" transform="translate(60, 40)">
+      <rect width="520" height="520" rx="10" fill="url(#art-rehbara-hero)" stroke="#333333" stroke-width="1" />
+      <!-- Stylized artwork text elements matching reference screenshot 3 -->
+      <text x="260" y="80" text-anchor="middle" fill="#3E2723" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="44" font-weight="800">रहबरा</text>
+      <!-- Doorframe & Couple Sketch Representation -->
+      <rect x="160" y="110" width="200" height="340" fill="none" stroke="#5D4037" stroke-width="4" />
+      <line x1="260" y1="110" x2="260" y2="450" stroke="#5D4037" stroke-width="2" />
+      <circle cx="230" cy="220" r="30" fill="#4E342E" />
+      <circle cx="280" cy="240" r="26" fill="#4E342E" />
+      <path d="M190 340 Q 230 260 250 340" stroke="#3E2723" stroke-width="12" fill="none" />
+      <text x="180" y="490" fill="#3E2723" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="600">Abhijeet</text>
+      <text x="330" y="490" fill="#3E2723" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="600">Shayra</text>
+    </g>
+
+    <!-- RIGHT COLUMN: QUEUE & TABS -->
+    <g id="Queue-Panel" transform="translate(680, 20)">
+
+      <!-- Top Tabs: UP NEXT | LYRICS | RELATED | COMMENTS -->
+      <g id="Queue-Tabs" transform="translate(0, 0)">
+        <text x="30" y="24" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="700">UP NEXT</text>
+        <!-- Active underline -->
+        <rect x="0" y="32" width="60" height="2" fill="#FFFFFF" />
+
+        <text x="110" y="24" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">LYRICS</text>
+        <text x="195" y="24" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">COMMENTS</text>
+        <text x="290" y="24" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">RELATED</text>
+        <line x1="0" y1="33" x2="520" y2="33" stroke="#212121" stroke-width="1" />
+      </g>
+
+      <!-- Queue Header Info -->
+      <g id="Queue-Subheader" transform="translate(0, 52)">
+        <text x="0" y="14" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">Playing from</text>
+        <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="700">Rehbara</text>
+
+        <!-- Save Button -->
+        <g transform="translate(420, 10)">
+          <rect width="80" height="30" rx="15" fill="#212121" />
+          <text x="16" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="600">+ Save</text>
+        </g>
+      </g>
+
+      <!-- Autoplay Toggle Row -->
+      <g id="Autoplay-Row" transform="translate(0, 104)">
+        <text x="0" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="600">Autoplay</text>
+        <text x="0" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">Add similar content to the end of the queue</text>
+        <!-- Blue Toggle Switch (ON) -->
+        <rect x="460" y="14" width="38" height="20" rx="10" fill="#3B82F6" />
+        <circle cx="488" cy="24" r="8" fill="#FFFFFF" />
+      </g>
+
+      <!-- Currently Playing Item Box -->
+      <g id="Queue-Now-Playing-Card" transform="translate(0, 154)">
+        <rect width="520" height="54" rx="6" fill="#181818" />
+        <!-- Soundwave / Speaker Icon -->
+        <path d="M16 22H19L23 18V36L19 32H16V22Z" fill="#FFFFFF" />
+        <path d="M26 23C27.5 24.5 27.5 29.5 26 31" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" />
+        <!-- Title & Artist -->
+        <text x="44" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Rehbara</text>
+        <text x="44" y="42" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Abhijeet Srivastava &amp; Shayra Apoorva</text>
+        <text x="470" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">2:54</text>
+      </g>
+
+      <!-- Autoplay Chips Filter Row -->
+      <g id="Autoplay-Chips" transform="translate(0, 230)">
+        <text x="0" y="14" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Autoplay is on</text>
+        <g transform="translate(0, 24)">
+          <g transform="translate(0, 0)"><rect width="44" height="28" rx="6" fill="#FFFFFF" /><text x="14" y="18" fill="#030303" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="700">All</text></g>
+          <g transform="translate(52, 0)"><rect width="68" height="28" rx="6" fill="#212121" /><text x="12" y="18" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Familiar</text></g>
+          <g transform="translate(128, 0)"><rect width="76" height="28" rx="6" fill="#212121" /><text x="12" y="18" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Romance</text></g>
+          <g transform="translate(212, 0)"><rect width="52" height="28" rx="6" fill="#212121" /><text x="12" y="18" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Chill</text></g>
+          <g transform="translate(272, 0)"><rect width="64" height="28" rx="6" fill="#212121" /><text x="12" y="18" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Upbeat</text></g>
+          <g transform="translate(344, 0)"><rect width="72" height="28" rx="6" fill="#212121" /><text x="12" y="18" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Discover</text></g>
+        </g>
+      </g>
+
+      <!-- Up Next Queue Items List -->
+      <g id="Queue-List" transform="translate(0, 296)">
+        <!-- Item 1: Barsaat -->
+        <g transform="translate(0, 0)">
+          <rect width="36" height="36" rx="2" fill="url(#art-barsaat-thumb)" />
+          <text x="48" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Barsaat X Spider-Man (Brand New Day Edition)</text>
+          <text x="48" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">Banjaare &amp; Roni</text>
+          <text x="470" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">3:06</text>
+        </g>
+
+        <!-- Item 2: Humdum -->
+        <g transform="translate(0, 48)">
+          <rect width="36" height="36" rx="2" fill="url(#art-humdum-thumb)" />
+          <text x="48" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Humdum (2am Version)</text>
+          <text x="48" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">Aditya Rikhari</text>
+          <text x="470" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">1:30</text>
+        </g>
+
+        <!-- Item 3: Sajni -->
+        <g transform="translate(0, 96)">
+          <rect width="36" height="36" rx="2" fill="url(#art-sajni-thumb)" />
+          <text x="48" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Sajni</text>
+          <text x="48" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">SATYAM</text>
+          <text x="470" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">2:17</text>
+        </g>
+
+        <!-- Item 4: Idhar Zara Sa Dekh Lo -->
+        <g transform="translate(0, 144)">
+          <rect width="36" height="36" rx="2" fill="url(#art-idhar-thumb)" />
+          <text x="48" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Idhar Zara Sa Dekh Lo</text>
+          <text x="48" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">Shikhar &amp; Yashika Sikka</text>
+          <text x="470" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">2:52</text>
+        </g>
+
+        <!-- Item 5: SAAWALI -->
+        <g transform="translate(0, 192)">
+          <rect width="36" height="36" rx="2" fill="url(#art-saawali-thumb)" />
+          <text x="48" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">SAAWALI</text>
+          <text x="48" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">Saahel</text>
+          <text x="470" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">2:41</text>
+        </g>
+
+        <!-- Item 6: Faasle -->
+        <g transform="translate(0, 240)">
+          <rect width="36" height="36" rx="2" fill="url(#art-faasle-thumb)" />
+          <text x="48" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Faasle</text>
+          <text x="48" y="32" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11">farhxn1080p</text>
+          <text x="470" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">1:01</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. PINNED BOTTOM PLAYER BAR -->
+  <g id="Bottom-Player-Bar" transform="translate(0, 888)">
+    <rect width="1440" height="72" fill="#212121" />
+    <g id="Scrubber">
+      <rect width="1440" height="2" fill="#383838" />
+      <rect width="380" height="2" fill="#FF0000" />
+      <circle cx="380" cy="1" r="5" fill="#FF0000" />
+    </g>
+    <g id="Left-Controls" transform="translate(16, 20)">
+      <polygon points="12,4 2,12 12,20" fill="#FFFFFF" />
+      <rect x="0" y="4" width="2" height="16" fill="#FFFFFF" />
+      <g transform="translate(32, 0)"><rect x="4" y="4" width="4" height="16" rx="1" fill="#FFFFFF" /><rect x="14" y="4" width="4" height="16" rx="1" fill="#FFFFFF" /></g>
+      <g transform="translate(68, 0)"><polygon points="2,4 12,12 2,20" fill="#FFFFFF" /><rect x="12" y="4" width="2" height="16" fill="#FFFFFF" /></g>
+      <text x="96" y="17" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">1:10 / 2:54</text>
+    </g>
+    <g id="Current-Track-Card" transform="translate(380, 12)">
+      <rect width="48" height="48" rx="2" fill="url(#art-rehbara-hero)" />
+      <text x="60" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Rehbara</text>
+      <text x="60" y="38" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Abhijeet Srivastava &amp; Shayra Apoorva • Rehbara • 2026</text>
+    </g>
+    <g id="Right-Controls" transform="translate(1160, 20)">
+      <path d="M2 6H5L9 2V16L5 12H2V6Z" fill="#AAAAAA" />
+      <g transform="translate(18, 7)"><rect width="70" height="3" rx="1.5" fill="#555555" /><rect width="40" height="3" rx="1.5" fill="#FFFFFF" /><circle cx="40" cy="1.5" r="4.5" fill="#FFFFFF" /></g>
+      <g transform="translate(110, 0)"><path d="M14 2L16 4L14 6M2 7V6C2 4.9 2.9 4 4 4H16M4 14L2 12L4 10M16 9V10C16 11.1 15.1 12 14 12H2" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" /></g>
+      <g transform="translate(142, 0)"><path d="M2 12L5 12L10 4L15 4M13 2L15 4L13 6M2 4L4 4M10 12L15 12M13 10L15 12L13 14" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" /></g>
+      <!-- Down Chevron (CLICKABLE -> Back to Home) -->
+      <g id="Chevron-Collapse" transform="translate(174, 0)">
+        <polyline points="2,9 7,14 12,9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+    </g>
+  </g>
+</svg>

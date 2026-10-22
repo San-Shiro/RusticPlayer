@@ -1,0 +1,512 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Master Background Radial Glow -->
+    <radialGradient id="app-bg-glow" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#1F1338" />
+      <stop offset="50%" stop-color="#0E0919" />
+      <stop offset="100%" stop-color="#07040C" />
+    </radialGradient>
+
+    <radialGradient id="hero-ambient-glow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.0" />
+    </radialGradient>
+
+    <!-- Album Art Gradients -->
+    <linearGradient id="art-hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" />
+      <stop offset="40%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <linearGradient id="art-album-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <linearGradient id="art-album-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+
+    <linearGradient id="art-album-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <linearGradient id="art-album-4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+
+    <linearGradient id="art-album-5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <linearGradient id="art-album-6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#F43F5E" />
+    </linearGradient>
+
+    <!-- Glass Dock Shaders & Filters -->
+    <filter id="dock-shadow" x="-10%" y="-20%" width="120%" height="150%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.65" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+
+    <linearGradient id="dock-glass-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#24183E" stop-opacity="0.52" />
+      <stop offset="100%" stop-color="#0E081B" stop-opacity="0.68" />
+    </linearGradient>
+
+    <linearGradient id="dock-specular-border" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65" />
+      <stop offset="25%" stop-color="#FFFFFF" stop-opacity="0.28" />
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.18" />
+    </linearGradient>
+
+    <linearGradient id="dock-convex-sheen" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="island-recessed-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#05030A" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#0D0717" stop-opacity="0.45" />
+    </linearGradient>
+
+    <linearGradient id="accent-cyan-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Glass Toggle Badge Glow -->
+    <linearGradient id="glass-badge-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.20" />
+    </linearGradient>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- 1. APPLICATION WINDOW CANVAS               -->
+  <!-- ========================================== -->
+  <g id="App-Window">
+    <rect width="1440" height="960" fill="url(#app-bg-glow)" />
+
+    <!-- Ambient Purple Top Right Glow -->
+    <circle cx="1200" cy="150" r="400" fill="#A855F7" fill-opacity="0.08" filter="blur(80px)" />
+    <circle cx="450" cy="350" r="350" fill="#38BDF8" fill-opacity="0.06" filter="blur(70px)" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. TITLE BAR & WINDOW CONTROLS             -->
+  <!-- ========================================== -->
+  <g id="Title-Bar">
+    <rect width="1440" height="42" fill="#0C0716" fill-opacity="0.85" />
+    <line x1="0" y1="42" x2="1440" y2="42" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+
+    <!-- Window Controls (Left / macOS Style or Windows Right) -->
+    <g id="Traffic-Lights" transform="translate(16, 14)">
+      <circle cx="6" cy="6" r="6" fill="#EF4444" fill-opacity="0.8" />
+      <circle cx="26" cy="6" r="6" fill="#F59E0B" fill-opacity="0.8" />
+      <circle cx="46" cy="6" r="6" fill="#10B981" fill-opacity="0.8" />
+    </g>
+
+    <!-- App Identity -->
+    <g id="App-Brand" transform="translate(80, 11)">
+      <!-- Waveform Icon -->
+      <rect x="0" y="5" width="3" height="10" rx="1.5" fill="#38BDF8" />
+      <rect x="5" y="2" width="3" height="16" rx="1.5" fill="#818CF8" />
+      <rect x="10" y="7" width="3" height="7" rx="1.5" fill="#C084FC" />
+      <text x="20" y="15" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="0.5">RusticPlayer</text>
+      <text x="102" y="15" fill="#A855F7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" letter-spacing="1">ULTRA</text>
+    </g>
+
+    <!-- Centered Search Bar -->
+    <g id="Search-Capsule" transform="translate(520, 7)">
+      <rect width="400" height="28" rx="14" fill="#1B132A" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+      <!-- Search Icon -->
+      <circle cx="16" cy="14" r="5" stroke="#94A3B8" stroke-width="1.5" fill="none" />
+      <line x1="20" y1="18" x2="24" y2="22" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+      <text x="32" y="18" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Search tracks, artists, albums, playlists... (Ctrl+K)</text>
+    </g>
+
+    <!-- Top Right Stats / Quick Actions -->
+    <g id="Title-Bar-Actions" transform="translate(1310, 11)">
+      <rect width="114" height="22" rx="11" fill="#181026" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+      <circle cx="12" cy="11" r="3.5" fill="#10B981" />
+      <text x="22" y="15" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">60 FPS  |  44.1k</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. SIDEBAR NAVIGATION                      -->
+  <!-- ========================================== -->
+  <g id="Sidebar" transform="translate(0, 42)">
+    <rect width="240" height="918" fill="#0E0919" fill-opacity="0.7" />
+    <line x1="240" y1="0" x2="240" y2="918" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1" />
+
+    <!-- Navigation Section: DISCOVER -->
+    <text x="24" y="32" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">DISCOVER</text>
+
+    <!-- Active Nav: Home -->
+    <g id="Nav-Home" transform="translate(14, 46)">
+      <rect width="212" height="38" rx="8" fill="#8B5CF6" fill-opacity="0.18" stroke="#A855F7" stroke-opacity="0.4" stroke-width="1" />
+      <rect x="0" y="8" width="3" height="22" rx="1.5" fill="#C084FC" />
+      <!-- Home Icon -->
+      <path d="M18 25V18H24V25M14 19L21 13L28 19V25C28 25.5523 27.5523 26 27 26H15C14.4477 26 14 25.5523 14 25V19Z" stroke="#C084FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <text x="36" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Home</text>
+    </g>
+
+    <!-- Nav: Library -->
+    <g id="Nav-Library" transform="translate(14, 90)">
+      <rect width="212" height="38" rx="8" fill="transparent" />
+      <path d="M14 14H20V26H14V14ZM22 14H28V26H22V14ZM16 14V26M24 14V26" stroke="#94A3B8" stroke-width="1.6" stroke-linecap="round" fill="none" />
+      <text x="36" y="24" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Music Library</text>
+      <rect x="176" y="11" width="28" height="16" rx="8" fill="#1E1435" />
+      <text x="183" y="23" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">142</text>
+    </g>
+
+    <!-- Nav: Playlists -->
+    <g id="Nav-Playlists" transform="translate(14, 134)">
+      <rect width="212" height="38" rx="8" fill="transparent" />
+      <path d="M14 15H28M14 19H24M14 23H28M26 19L28 21" stroke="#94A3B8" stroke-width="1.6" stroke-linecap="round" fill="none" />
+      <text x="36" y="24" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Playlists</text>
+    </g>
+
+    <!-- Nav: Artists -->
+    <g id="Nav-Artists" transform="translate(14, 178)">
+      <rect width="212" height="38" rx="8" fill="transparent" />
+      <circle cx="21" cy="18" r="4" stroke="#94A3B8" stroke-width="1.6" fill="none" />
+      <path d="M14 26C14 23.5 17 22 21 22C25 22 28 23.5 28 26" stroke="#94A3B8" stroke-width="1.6" stroke-linecap="round" fill="none" />
+      <text x="36" y="24" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Artists</text>
+    </g>
+
+    <!-- Section: YOUR COLLECTION -->
+    <text x="24" y="250" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">COLLECTION</text>
+
+    <g id="Nav-Favorites" transform="translate(14, 264)">
+      <path d="M21 24.5L19.5 23.2C14.5 18.7 11 15.6 11 11.8C11 8.7 13.4 6.3 16.5 6.3C18.2 6.3 19.9 7.1 21 8.3C22.1 7.1 23.8 6.3 25.5 6.3C28.6 6.3 31 8.7 31 11.8C31 15.6 27.5 18.7 22.5 23.2L21 24.5Z" transform="scale(0.8) translate(3, 4)" stroke="#EC4899" stroke-width="1.8" fill="#EC4899" fill-opacity="0.25" />
+      <text x="36" y="24" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Favorites</text>
+      <text x="180" y="24" fill="#EC4899" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">38</text>
+    </g>
+
+    <g id="Nav-Synthwave" transform="translate(14, 304)">
+      <circle cx="21" cy="19" r="3.5" fill="#38BDF8" />
+      <text x="36" y="24" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Synthwave 80s</text>
+    </g>
+
+    <g id="Nav-ChillLoFi" transform="translate(14, 344)">
+      <circle cx="21" cy="19" r="3.5" fill="#A855F7" />
+      <text x="36" y="24" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Deep Focus Lo-Fi</text>
+    </g>
+
+    <!-- Bottom Sidebar Device Status -->
+    <g id="Sidebar-System-Status" transform="translate(16, 830)">
+      <rect width="208" height="64" rx="10" fill="#150E23" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+      <text x="14" y="22" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">AUDIO ENGINE</text>
+      <circle cx="184" cy="18" r="4" fill="#10B981" />
+      <text x="14" y="42" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">WASAPI Exclusive</text>
+      <text x="14" y="54" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Bit-perfect 32-bit float</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 4. MAIN SCROLLABLE CONTENT AREA            -->
+  <!-- ========================================== -->
+  <g id="Main-Content" transform="translate(240, 42)">
+
+    <!-- A. HERO FEATURED RELEASE BANNER -->
+    <g id="Hero-Banner" transform="translate(32, 24)">
+      <!-- Hero Box with ambient gradient -->
+      <rect width="1136" height="210" rx="16" fill="#171026" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+      <!-- Ambient overlay inside banner -->
+      <rect width="1136" height="210" rx="16" fill="url(#hero-ambient-glow)" />
+
+      <!-- Hero Album Cover 160x160 -->
+      <g id="Hero-Artwork" transform="translate(24, 25)">
+        <rect width="160" height="160" rx="12" fill="url(#art-hero)" filter="drop-shadow(0 12px 24px rgba(0,0,0,0.5))" />
+        <!-- Stylized Cover Graphics -->
+        <circle cx="80" cy="80" r="45" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" fill="none" />
+        <circle cx="80" cy="80" r="15" fill="#FFFFFF" fill-opacity="0.4" />
+        <path d="M30 130 Q 80 70 130 130" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3" fill="none" />
+      </g>
+
+      <!-- Hero Typography & Badges -->
+      <g id="Hero-Text" transform="translate(210, 36)">
+        <rect width="118" height="22" rx="11" fill="#8B5CF6" fill-opacity="0.25" stroke="#A855F7" stroke-opacity="0.4" stroke-width="1" />
+        <text x="12" y="15" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1">FEATURED RELEASE</text>
+
+        <text x="0" y="60" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5">Neon Horizon</text>
+        <text x="0" y="85" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Stellar Dreams  •  Synthwave / Cyberpunk  •  12 Tracks  •  2026</text>
+
+        <!-- CTA Play Button -->
+        <g id="Hero-Play-Button" transform="translate(0, 108)">
+          <rect width="144" height="40" rx="20" fill="url(#accent-cyan-purple)" filter="drop-shadow(0 6px 16px rgba(139,92,246,0.4))" />
+          <polygon points="26,14 26,26 38,20" fill="#0A0612" />
+          <text x="46" y="25" fill="#0A0612" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Play Album</text>
+        </g>
+
+        <!-- Secondary Favorite Button -->
+        <g id="Hero-Like-Button" transform="translate(156, 108)">
+          <rect width="40" height="40" rx="20" fill="#241738" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
+          <path d="M20 25L18.5 23.6C13.5 19.1 10 16 10 12.2C10 9.1 12.4 6.7 15.5 6.7C17.2 6.7 18.9 7.5 20 8.7C21.1 7.5 22.8 6.7 24.5 6.7C27.6 6.7 30 9.1 30 12.2C30 16 26.5 19.1 21.5 23.6L20 25Z" transform="scale(0.8) translate(5, 5)" stroke="#EC4899" stroke-width="2" fill="none" />
+        </g>
+      </g>
+    </g>
+
+    <!-- B. SECTION: RECENT ALBUMS GRID -->
+    <g id="Section-Albums" transform="translate(32, 266)">
+      <text x="0" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" letter-spacing="-0.3">Recent &amp; Heavy Rotation</text>
+      <text x="1080" y="20" fill="#8B5CF6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">See all (28)</text>
+
+      <!-- Row of 5 Album Cards -->
+      <!-- Card 1 -->
+      <g id="Album-Card-1" transform="translate(0, 36)">
+        <rect width="208" height="270" rx="12" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1" />
+        <rect x="14" y="14" width="180" height="180" rx="10" fill="url(#art-album-1)" />
+        <circle cx="104" cy="104" r="32" fill="#000000" fill-opacity="0.25" />
+        <polygon points="100,94 100,114 114,104" fill="#FFFFFF" />
+        <text x="14" y="218" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Cosmic Voyage</text>
+        <text x="14" y="238" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Astral Pulse</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g id="Album-Card-2" transform="translate(232, 36)">
+        <rect width="208" height="270" rx="12" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1" />
+        <rect x="14" y="14" width="180" height="180" rx="10" fill="url(#art-album-2)" />
+        <circle cx="336" cy="104" r="32" fill="#000000" fill-opacity="0.25" />
+        <polygon points="332,94 332,114 346,104" fill="#FFFFFF" />
+        <text x="14" y="218" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Solar Flare</text>
+        <text x="14" y="238" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Helios Collective</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g id="Album-Card-3" transform="translate(464, 36)">
+        <rect width="208" height="270" rx="12" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1" />
+        <rect x="14" y="14" width="180" height="180" rx="10" fill="url(#art-album-3)" />
+        <text x="14" y="218" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Quantum Rain</text>
+        <text x="14" y="238" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Neon Matrix</text>
+      </g>
+
+      <!-- Card 4 -->
+      <g id="Album-Card-4" transform="translate(696, 36)">
+        <rect width="208" height="270" rx="12" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1" />
+        <rect x="14" y="14" width="180" height="180" rx="10" fill="url(#art-album-4)" />
+        <text x="14" y="218" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Midnight Echoes</text>
+        <text x="14" y="238" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Velvet Sound</text>
+      </g>
+
+      <!-- Card 5 -->
+      <g id="Album-Card-5" transform="translate(928, 36)">
+        <rect width="208" height="270" rx="12" fill="#140D22" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1" />
+        <rect x="14" y="14" width="180" height="180" rx="10" fill="url(#art-album-5)" />
+        <text x="14" y="218" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Deep Submergence</text>
+        <text x="14" y="238" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Abyssal Sound</text>
+      </g>
+    </g>
+
+    <!-- C. SECTION: POPULAR TRACKS (EXTENDING UNDER THE FLOATING DOCK) -->
+    <!-- This demonstrates content flowing physically underneath the glass dock -->
+    <g id="Section-Tracks-Underneath" transform="translate(32, 595)">
+      <text x="0" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" letter-spacing="-0.3">Top Tracks This Week</text>
+
+      <!-- Track Row 1 -->
+      <g id="Track-Row-1" transform="translate(0, 38)">
+        <rect width="1136" height="52" rx="8" fill="#160F25" fill-opacity="0.6" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
+        <text x="20" y="31" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">01</text>
+        <rect x="48" y="8" width="36" height="36" rx="6" fill="url(#art-hero)" />
+        <text x="96" y="25" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Hyperdrive Overdrive</text>
+        <text x="96" y="40" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Stellar Dreams</text>
+        <text x="500" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Neon Horizon</text>
+        <text x="1060" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">03:45</text>
+      </g>
+
+      <!-- Track Row 2 -->
+      <g id="Track-Row-2" transform="translate(0, 96)">
+        <rect width="1136" height="52" rx="8" fill="#120A1E" fill-opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1" />
+        <text x="20" y="31" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">02</text>
+        <rect x="48" y="8" width="36" height="36" rx="6" fill="url(#art-album-1)" />
+        <text x="96" y="25" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Cyber City Lights</text>
+        <text x="96" y="40" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Astral Pulse</text>
+        <text x="500" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Cosmic Voyage</text>
+        <text x="1060" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">04:12</text>
+      </g>
+
+      <!-- Track Row 3 (Sitting right behind where dock hovers) -->
+      <g id="Track-Row-3" transform="translate(0, 154)">
+        <rect width="1136" height="52" rx="8" fill="#120A1E" fill-opacity="0.4" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1" />
+        <text x="20" y="31" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">03</text>
+        <rect x="48" y="8" width="36" height="36" rx="6" fill="url(#art-album-2)" />
+        <text x="96" y="25" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Solar Winds (Remix)</text>
+        <text x="96" y="40" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Helios Collective</text>
+        <text x="500" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Solar Flare</text>
+        <text x="1060" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">02:58</text>
+      </g>
+
+      <!-- Track Row 4 (Directly under the dock island) -->
+      <g id="Track-Row-4" transform="translate(0, 212)">
+        <rect width="1136" height="52" rx="8" fill="#120A1E" fill-opacity="0.4" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1" />
+        <text x="20" y="31" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">04</text>
+        <rect x="48" y="8" width="36" height="36" rx="6" fill="url(#art-album-3)" />
+        <text x="96" y="25" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Zero Gravity Drift</text>
+        <text x="96" y="40" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Neon Matrix</text>
+        <text x="500" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Quantum Rain</text>
+        <text x="1060" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">05:21</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 5. THE FLOATING GLASS ISLAND DOCK (PINNED AT BOTTOM OVER SCROLLING CONTENT) -->
+  <!-- ========================================================================= -->
+  <!-- Position: x: 260, y: 864, width: 1150, height: 76, rx: 22 -->
+  <g id="Floating-Glass-Dock" transform="translate(260, 860)">
+
+    <!-- Dock Soft Multi-Stop Drop Shadow -->
+    <rect width="1150" height="76" rx="22" fill="#000000" filter="url(#dock-shadow)" opacity="0.8" />
+
+    <!-- Dock Glass Base Translucent Fill (~45% alpha) -->
+    <!-- Content underneath remains visible through this translucent glass layer -->
+    <rect width="1150" height="76" rx="22" fill="url(#dock-glass-fill)" />
+
+    <!-- Specular Hairline Rim Stroke (Top highlight catching light) -->
+    <rect width="1150" height="76" rx="22" fill="none" stroke="url(#dock-specular-border)" stroke-width="1.2" />
+
+    <!-- 3D Convex Lens Top Gloss Sheen (Simulating curved glass refraction) -->
+    <rect x="1" y="1" width="1148" height="34" rx="21" fill="url(#dock-convex-sheen)" />
+
+    <!-- ======================================== -->
+    <!-- DOCK LEFT: CURRENT TRACK & ARTWORK       -->
+    <!-- ======================================== -->
+    <g id="Dock-Left-Track-Info" transform="translate(18, 12)">
+      <!-- Album Thumbnail 52x52 with Glow -->
+      <g id="Dock-Album-Thumb">
+        <rect width="52" height="52" rx="10" fill="url(#art-hero)" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.5))" />
+        <rect width="52" height="52" rx="10" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+        <!-- Sound Wave Animation Indicator -->
+        <rect x="16" y="24" width="3" height="12" rx="1.5" fill="#FFFFFF" fill-opacity="0.9" />
+        <rect x="22" y="18" width="3" height="18" rx="1.5" fill="#FFFFFF" fill-opacity="0.9" />
+        <rect x="28" y="26" width="3" height="10" rx="1.5" fill="#FFFFFF" fill-opacity="0.9" />
+        <rect x="34" y="20" width="3" height="16" rx="1.5" fill="#FFFFFF" fill-opacity="0.9" />
+      </g>
+
+      <!-- Track Metadata -->
+      <g id="Dock-Track-Names" transform="translate(64, 8)">
+        <text x="0" y="14" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">Hyperdrive Overdrive</text>
+        <text x="0" y="31" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Stellar Dreams</text>
+      </g>
+
+      <!-- Heart / Favorite Button -->
+      <g id="Dock-Heart" transform="translate(236, 17)">
+        <path d="M12 19.5L10.5 18.2C5.5 13.7 2 10.6 2 6.8C2 3.7 4.4 1.3 7.5 1.3C9.2 1.3 10.9 2.1 12 3.3C13.1 2.1 14.8 1.3 16.5 1.3C19.6 1.3 22 3.7 22 6.8C22 10.6 18.5 13.7 13.5 18.2L12 19.5Z" fill="#EC4899" filter="drop-shadow(0 2px 6px rgba(236,72,153,0.5))" />
+      </g>
+    </g>
+
+    <!-- ======================================== -->
+    <!-- DOCK CENTER: RECESSED DYNAMIC ISLAND     -->
+    <!-- ======================================== -->
+    <!-- Position: x: 300, y: 8, width: 550, height: 60, rx: 16 -->
+    <g id="Dock-Center-Dynamic-Island" transform="translate(300, 8)">
+      <!-- Smoked recessed capsule layer -->
+      <rect width="550" height="60" rx="16" fill="url(#island-recessed-fill)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
+      <!-- Subtle top inner shadow -->
+      <line x1="16" y1="1" x2="534" y2="1" stroke="#000000" stroke-opacity="0.5" stroke-width="1" />
+
+      <!-- Row 1: Smooth Scrubber Bar -->
+      <g id="Island-Scrubber" transform="translate(20, 10)">
+        <!-- Elapsed Time -->
+        <text x="0" y="10" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">01:42</text>
+
+        <!-- Progress Track Groove -->
+        <g id="Track-Groove" transform="translate(42, 4)">
+          <!-- Inactive Background Groove -->
+          <rect width="426" height="5" rx="2.5" fill="#2E2045" fill-opacity="0.8" />
+          <!-- Active Gradient Progress -->
+          <rect width="188" height="5" rx="2.5" fill="url(#accent-cyan-purple)" />
+
+          <!-- Glowing Head/Thumb Pill -->
+          <circle cx="188" cy="2.5" r="6" fill="#FFFFFF" filter="drop-shadow(0 0 6px rgba(56,189,248,0.8))" />
+        </g>
+
+        <!-- Remaining Time -->
+        <text x="478" y="10" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">03:45</text>
+      </g>
+
+      <!-- Row 2: Transport Playback Controls -->
+      <g id="Island-Playback-Controls" transform="translate(195, 26)">
+        <!-- Shuffle -->
+        <g id="Btn-Shuffle" transform="translate(0, 5)">
+          <path d="M2 14L8 14L14 4L20 4M17 1L20 4L17 7M2 4L6 4M14 14L20 14M17 11L20 14L17 17" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </g>
+
+        <!-- Previous -->
+        <g id="Btn-Prev" transform="translate(38, 5)">
+          <polygon points="12,3 3,9 12,15" fill="#E2E8F0" />
+          <line x1="2" y1="3" x2="2" y2="15" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" />
+        </g>
+
+        <!-- Center Play/Pause Glowing Button -->
+        <g id="Btn-Play-Pause" transform="translate(68, 0)">
+          <circle cx="14" cy="14" r="15" fill="url(#accent-cyan-purple)" filter="drop-shadow(0 2px 10px rgba(168,85,247,0.55))" />
+          <!-- Pause Bars -->
+          <rect x="9" y="8" width="3.5" height="12" rx="1.7" fill="#0A0612" />
+          <rect x="15.5" y="8" width="3.5" height="12" rx="1.7" fill="#0A0612" />
+        </g>
+
+        <!-- Next -->
+        <g id="Btn-Next" transform="translate(112, 5)">
+          <polygon points="3,3 12,9 3,15" fill="#E2E8F0" />
+          <line x1="13" y1="3" x2="13" y2="15" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" />
+        </g>
+
+        <!-- Repeat -->
+        <g id="Btn-Repeat" transform="translate(142, 5)">
+          <path d="M16 2L18 4L16 6M2 7V6C2 4.9 2.9 4 4 4H18M4 16L2 14L4 12M18 11V12C18 13.1 17.1 14 16 14H2" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </g>
+      </g>
+    </g>
+
+    <!-- ======================================== -->
+    <!-- DOCK RIGHT: CONTROLS, VOLUME & GLASS BADGE-->
+    <!-- ======================================== -->
+    <g id="Dock-Right-Actions" transform="translate(875, 20)">
+      <!-- Interactive Glass Mode Toggle Badge -->
+      <g id="Badge-Glass-Toggle">
+        <rect width="84" height="34" rx="17" fill="url(#glass-badge-fill)" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1" />
+        <text x="14" y="21" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">✨ Glass</text>
+      </g>
+
+      <!-- Volume Scrubber -->
+      <g id="Dock-Volume-Control" transform="translate(100, 7)">
+        <!-- Speaker Icon -->
+        <path d="M2 7H6L11 3V17L6 13H2V7Z" fill="#94A3B8" />
+        <path d="M13 6C14.5 7.5 14.5 12.5 13 14" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" fill="none" />
+
+        <!-- Volume Track Groove 80px -->
+        <g transform="translate(22, 7)">
+          <rect width="80" height="4" rx="2" fill="#2E2045" fill-opacity="0.8" />
+          <rect width="56" height="4" rx="2" fill="#38BDF8" />
+          <circle cx="56" cy="2" r="5" fill="#FFFFFF" />
+        </g>
+      </g>
+
+      <!-- Queue Icon -->
+      <g id="Dock-Queue" transform="translate(222, 7)">
+        <rect width="20" height="20" fill="transparent" />
+        <line x1="2" y1="5" x2="18" y2="5" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="2" y1="10" x2="18" y2="10" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="2" y1="15" x2="12" y2="15" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round" />
+      </g>
+
+      <!-- Fullscreen / Expand Icon -->
+      <g id="Dock-Expand" transform="translate(248, 7)">
+        <path d="M3 8V3H8M17 3H22V8M22 17V22H17M8 22H3V17" stroke="#94A3B8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+    </g>
+
+  </g>
+</svg>

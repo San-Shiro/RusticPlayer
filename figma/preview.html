@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RusticPlayer • Figma Design Canvas & Glassmorphic Inspector</title>
+  <style>
+    :root {
+      --bg: #07040C;
+      --card-bg: #0E0919;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent-purple: #8B5CF6;
+      --accent-cyan: #38BDF8;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: rgba(14, 9, 25, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: #000;
+    }
+    .brand h1 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .brand span {
+      background: rgba(139, 92, 246, 0.2);
+      color: #C084FC;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+    .tabs {
+      display: flex;
+      background: #140D22;
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      gap: 4px;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .tab-btn:hover {
+      color: #FFF;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .tab-btn.active {
+      background: var(--accent-purple);
+      color: #FFF;
+      box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+    }
+    .btn-copy {
+      background: linear-gradient(135deg, #0284C7, #7C3AED);
+      color: #FFF;
+      border: none;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .btn-copy:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+    .main-canvas {
+      flex: 1;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .stage {
+      background: #0B0714;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      max-width: 100%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .stage svg {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    .instructions {
+      max-width: 900px;
+      width: 100%;
+      background: #110A1F;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .instructions h3 {
+      font-size: 15px;
+      color: #C084FC;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .step-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+    .step-num {
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 4px;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="brand-logo">R</div>
+      <div>
+        <h1>RusticPlayer Design Studio</h1>
+      </div>
+      <span>FIGMA VECTOR ASSETS</span>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('full')">Full Desktop App (1440x960)</button>
+      <button class="tab-btn" onclick="switchTab('variants')">Dock Concepts (4 Variants)</button>
+      <button class="tab-btn" onclick="switchTab('tokens')">Design Tokens &amp; Specs</button>
+    </div>
+
+    <div class="actions">
+      <button class="btn-copy" onclick="copyCurrentSvg()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <span id="copy-btn-text">Copy SVG to Clipboard</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-canvas">
+    <div class="instructions">
+      <h3>🚀 How to Import into Figma in 2 Seconds</h3>
+      <div class="steps">
+        <div class="step-card">
+          <div class="step-num">Step 1 • Click Button</div>
+          Click <strong>"Copy SVG to Clipboard"</strong> above (or run <code>.\figma\copy_to_clipboard.ps1</code> in terminal).
+        </div>
+        <div class="step-card">
+          <div class="step-num">Step 2 • Open Figma</div>
+          Switch to your installed <strong>Figma</strong> app, create or open a canvas.
+        </div>
+        <div class="step-card">
+          <div class="step-num">Step 3 • Paste (Ctrl+V)</div>
+          Press <kbd>Ctrl+V</kbd>. Figma immediately instantiates native vector frames, layers, gradients, and text!
+        </div>
+      </div>
+    </div>
+
+    <div class="stage" id="stage-full">
+      <object id="obj-full" data="rustic_player_full_ui.svg" type="image/svg+xml" style="width:1440px; height:960px;"></object>
+    </div>
+
+    <div class="stage hidden" id="stage-variants">
+      <object id="obj-variants" data="floating_glass_dock_variants.svg" type="image/svg+xml" style="width:1200px; height:1100px;"></object>
+    </div>
+
+    <div class="stage hidden" id="stage-tokens">
+      <object id="obj-tokens" data="rustic_player_design_tokens.svg" type="image/svg+xml" style="width:1200px; height:920px;"></object>
+    </div>
+  </main>
+
+  <script>
+    let currentTab = 'full';
+
+    function switchTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      document.getElementById('stage-full').classList.add('hidden');
+      document.getElementById('stage-variants').classList.add('hidden');
+      document.getElementById('stage-tokens').classList.add('hidden');
+
+      document.getElementById('stage-' + tab).classList.remove('hidden');
+    }
+
+    async function copyCurrentSvg() {
+      const fileMap = {
+        'full': 'rustic_player_full_ui.svg',
+        'variants': 'floating_glass_dock_variants.svg',
+        'tokens': 'rustic_player_design_tokens.svg'
+      };
+      const fileName = fileMap[currentTab];
+      try {
+        const res = await fetch(fileName);
+        const text = await res.text();
+        await navigator.clipboard.writeText(text);
+        const btnText = document.getElementById('copy-btn-text');
+        btnText.innerText = '✅ Copied to Clipboard!';
+        setTimeout(() => {
+          btnText.innerText = 'Copy SVG to Clipboard';
+        }, 2500);
+      } catch (err) {
+        alert('Could not copy automatically. You can drag and drop figma/' + fileName + ' directly into Figma!');
+      }
+    }
+  </script>
+</body>
+</html>

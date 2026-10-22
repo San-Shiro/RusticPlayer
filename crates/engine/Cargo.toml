@@ -1,0 +1,28 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+profiling = ["dep:tracing-tracy"]
+
+[dependencies]
+rustic_core = { path = "../rustic_core" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0"
+schemars = "0.8"
+thiserror = "2.0.19"
+tracing = "0.1.44"
+tracing-tracy = { version = "0.11", optional = true }
+tokio = { version = "1.53.1", features = ["full"] }
+rand = "0.10.2"
+audio = { version = "0.1.0", path = "../audio" }
+sources = { version = "0.1.0", path = "../sources" }
+
+[dev-dependencies]
+cargo_metadata = "0.18"
+
+[dependencies.rusqlite]
+version = "0.32.1"
+features = ["bundled"]

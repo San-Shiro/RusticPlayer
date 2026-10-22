@@ -1,0 +1,54 @@
+# Rust build artifacts
+/target/
+/target-cli/
+Cargo.lock
+
+# Cache, scratch, and temporary files
+/cache/
+/scratch/
+/dummy_library/
+/test_music/
+__pycache__/
+*.pyc
+*.pyo
+
+# External reference & nested sub-repos
+/reference/
+/hummingbird/
+
+# Databases and logs
+*.db
+*.db-journal
+*.log
+app_debug.log
+err.txt
+out.txt
+
+# Graphify output
+/graphify-out/
+
+# Sensitive credentials & tokens (CRITICAL)
+cookies.json
+*.env
+*.env.*
+.env*
+token*.xml
+token*.html
+
+# Personal documents & resume scratch files
+resume*
+*.pdf
+*.tex
+*bullet*.json
+scratch_*_raw.json
+auto_refine.py
+build_resume.py
+line_optimizer.py
+measure_all.py
+solve_all.py
+solve_exact.py
+tune_all_bullets.py
+
+# Editor workspace settings
+.vscode/
+.commandcode/

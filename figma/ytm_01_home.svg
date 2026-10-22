@@ -1,0 +1,313 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Album Artwork Gradients / Mocks matching screenshot 1 -->
+    <!-- folklore: forest greyscale gradient -->
+    <linearGradient id="art-folklore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <!-- Cupid: pink studio gradient -->
+    <linearGradient id="art-cupid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#831843" />
+    </linearGradient>
+    <!-- NOT CUTE ANYMORE: stylized teal/grey -->
+    <linearGradient id="art-illit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5F9" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <!-- Barsaat: sketch sepia -->
+    <linearGradient id="art-barsaat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+    <!-- Night Song: red/green contrast -->
+    <linearGradient id="art-nightsong" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="40%" stop-color="#15803D" />
+      <stop offset="100%" stop-color="#052E16" />
+    </linearGradient>
+    <!-- Rehbara (Playing track) sepia/beige -->
+    <linearGradient id="art-rehbara" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E6D3" />
+      <stop offset="50%" stop-color="#CBB499" />
+      <stop offset="100%" stop-color="#7C654D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1440" height="960" fill="#030303" />
+
+  <!-- ======================================================== -->
+  <!-- 1. TOP HEADER (H: 64px)                                  -->
+  <!-- ======================================================== -->
+  <g id="Header">
+    <rect width="1440" height="64" fill="#030303" />
+    
+    <!-- Left: Hamburger + Logo + Back/Forward -->
+    <g transform="translate(16, 20)">
+      <!-- Hamburger Menu ≡ -->
+      <line x1="0" y1="5" x2="18" y2="5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="12" x2="18" y2="12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="19" x2="18" y2="19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+
+      <!-- YouTube Music Logo -->
+      <g transform="translate(36, 0)">
+        <circle cx="12" cy="12" r="11" fill="#FF0000" />
+        <circle cx="12" cy="12" r="7" fill="none" stroke="#FFFFFF" stroke-width="1.4" />
+        <polygon points="10.5,8.5 15.5,12 10.5,15.5" fill="#FFFFFF" />
+        <text x="28" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="18" font-weight="700" letter-spacing="-0.5">Music</text>
+      </g>
+
+      <!-- Back / Forward Arrows -->
+      <g transform="translate(130, 4)">
+        <path d="M12 4L4 12L12 20M4 12H20" stroke="#717171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        <path d="M36 4L44 12L36 20M44 12H28" stroke="#717171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+    </g>
+
+    <!-- Center Search Bar Pill (W: 480px) -->
+    <g id="Search-Capsule" transform="translate(220, 12)">
+      <rect width="460" height="40" rx="8" fill="#212121" />
+      <!-- Search Icon -->
+      <circle cx="20" cy="20" r="5.5" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <line x1="24.5" y1="24.5" x2="28" y2="28" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" />
+      <text x="38" y="25" fill="#888888" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">Search songs, albums, artists, podcasts</text>
+    </g>
+
+    <!-- Right: History Clock + Profile Avatar -->
+    <g transform="translate(1360, 18)">
+      <!-- History Clock Icon -->
+      <circle cx="12" cy="14" r="8" stroke="#FFFFFF" stroke-width="1.6" fill="none" />
+      <polyline points="12,10 12,14 15,14" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <path d="M5 8L3 6" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" />
+
+      <!-- User Avatar Ketan -->
+      <circle cx="48" cy="14" r="14" fill="#0284C7" />
+      <text x="43" y="19" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="700">K</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 2. LEFT SLIM SIDEBAR (W: 72px)                           -->
+  <!-- ======================================================== -->
+  <g id="Slim-Sidebar" transform="translate(0, 64)">
+    <rect width="72" height="824" fill="#030303" />
+
+    <!-- Nav Item 1: Home (Active) -->
+    <g id="Nav-Home" transform="translate(0, 16)">
+      <path d="M36 12L24 22V36H30V26H42V36H48V22L36 12Z" fill="#FFFFFF" />
+      <text x="36" y="48" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Home</text>
+    </g>
+
+    <!-- Nav Item 2: Explore -->
+    <g id="Nav-Explore" transform="translate(0, 80)">
+      <circle cx="36" cy="24" r="10" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <polygon points="39,19 36,29 33,24" fill="#AAAAAA" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Explore</text>
+    </g>
+
+    <!-- Nav Item 3: Library (Clickable -> Private Playlist) -->
+    <g id="Nav-Library" transform="translate(0, 144)">
+      <path d="M28 14H44V34L36 29L28 34V14Z" stroke="#AAAAAA" stroke-width="1.8" stroke-linejoin="round" fill="none" />
+      <text x="36" y="48" text-anchor="middle" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="500">Library</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 3. MAIN CONTENT AREA (X: 96px)                           -->
+  <!-- ======================================================== -->
+  <g id="Main-Content" transform="translate(96, 64)">
+
+    <!-- Horizontal Mood Filter Chips (H: 34px) -->
+    <g id="Mood-Chips" transform="translate(0, 16)">
+      <!-- Chips matching reference: Podcasts, Romance, Feel good, Relax, Party, Sad, Energize, Sleep, Workout, Commute, Focus -->
+      <g transform="translate(0, 0)"><rect width="84" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Podcasts</text></g>
+      <g transform="translate(92, 0)"><rect width="84" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Romance</text></g>
+      <g transform="translate(184, 0)"><rect width="88" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Feel good</text></g>
+      <g transform="translate(280, 0)"><rect width="68" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Relax</text></g>
+      <g transform="translate(356, 0)"><rect width="66" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Party</text></g>
+      <g transform="translate(430, 0)"><rect width="58" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Sad</text></g>
+      <g transform="translate(496, 0)"><rect width="82" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Energize</text></g>
+      <g transform="translate(586, 0)"><rect width="68" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Sleep</text></g>
+      <g transform="translate(662, 0)"><rect width="84" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Workout</text></g>
+      <g transform="translate(754, 0)"><rect width="88" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Commute</text></g>
+      <g transform="translate(850, 0)"><rect width="68" height="32" rx="8" fill="#212121" /><text x="14" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500">Focus</text></g>
+    </g>
+
+    <!-- SECTION 1: LISTEN AGAIN (Exact matching reference 1) -->
+    <g id="Section-Listen-Again" transform="translate(0, 80)">
+      <!-- Section Header with Avatar & Ketan -->
+      <circle cx="20" cy="24" r="18" fill="#0284C7" />
+      <text x="14" y="30" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="16" font-weight="700">K</text>
+      <text x="46" y="14" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">KETAN</text>
+      <text x="46" y="36" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="26" font-weight="700">Listen again</text>
+
+      <!-- Carousel Right Buttons: More + < > -->
+      <g transform="translate(1180, 14)">
+        <rect width="64" height="28" rx="14" fill="none" stroke="#444444" stroke-width="1" />
+        <text x="16" y="19" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="600">More</text>
+        <circle cx="86" cy="14" r="14" fill="#212121" />
+        <path d="M88 10L84 14L88 18" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" fill="none" />
+        <circle cx="120" cy="14" r="14" fill="#212121" />
+        <path d="M118 10L122 14L118 18" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- 5 Large Cards matching screenshot 1 -->
+      <!-- Card 1: folklore (CLICKABLE -> Album View) -->
+      <g id="Card-Folklore" transform="translate(0, 56)">
+        <rect width="220" height="220" rx="4" fill="url(#art-folklore)" />
+        <!-- Forest Graphic Representation -->
+        <line x1="40" y1="220" x2="40" y2="40" stroke="#0F172A" stroke-width="8" />
+        <line x1="75" y1="220" x2="75" y2="30" stroke="#1E293B" stroke-width="10" />
+        <line x1="120" y1="220" x2="120" y2="50" stroke="#0F172A" stroke-width="6" />
+        <line x1="170" y1="220" x2="170" y2="20" stroke="#1E293B" stroke-width="12" />
+        <text x="0" y="244" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">folklore</text>
+        <rect x="0" y="252" width="14" height="14" rx="2" fill="#444444" />
+        <text x="3" y="263" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="10" font-weight="700">E</text>
+        <text x="18" y="263" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Album • Taylor Swift</text>
+      </g>
+
+      <!-- Card 2: Cupid (Twin Ver.) (Wide Video Card) -->
+      <g id="Card-Cupid" transform="translate(240, 56)">
+        <rect width="280" height="220" rx="4" fill="url(#art-cupid)" />
+        <circle cx="140" cy="110" r="26" fill="#000000" fill-opacity="0.6" />
+        <polygon points="135,98 150,110 135,122" fill="#FFFFFF" />
+        <rect x="16" y="180" width="140" height="26" rx="4" fill="#BE185D" fill-opacity="0.8" />
+        <text x="24" y="197" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="700">Cupid (Twin Ver.)</text>
+        <text x="0" y="244" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Cupid (Twin Version)</text>
+        <text x="0" y="263" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">FIFTY FIFTY • 94M views</text>
+      </g>
+
+      <!-- Card 3: NOT CUTE ANYMORE -->
+      <g id="Card-Illit" transform="translate(540, 56)">
+        <rect width="160" height="220" rx="4" fill="url(#art-illit)" />
+        <circle cx="80" cy="110" r="24" fill="#000000" fill-opacity="0.6" />
+        <polygon points="76,100 88,110 76,120" fill="#FFFFFF" />
+        <text x="0" y="244" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">NOT CUTE ANYMORE</text>
+        <text x="0" y="263" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Song • ILLIT</text>
+      </g>
+
+      <!-- Card 4: Barsaat -->
+      <g id="Card-Barsaat" transform="translate(720, 56)">
+        <rect width="280" height="220" rx="4" fill="url(#art-barsaat)" />
+        <circle cx="140" cy="110" r="26" fill="#000000" fill-opacity="0.6" />
+        <polygon points="135,98 150,110 135,122" fill="#FFFFFF" />
+        <text x="40" y="70" fill="#991B1B" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="28" font-weight="800">बरसात</text>
+        <text x="0" y="244" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Barsaat</text>
+        <text x="0" y="263" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Banjaare &amp; Roni • 48M views</text>
+      </g>
+
+      <!-- Card 5: Night Song -->
+      <g id="Card-NightSong" transform="translate(1020, 56)">
+        <rect width="180" height="220" rx="4" fill="url(#art-nightsong)" />
+        <text x="0" y="244" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Night Song (Real World)</text>
+        <text x="0" y="263" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Album • Nusrat Fateh Ali Khan</text>
+      </g>
+    </g>
+
+    <!-- SECTION 2: FORGOTTEN FAVORITES -->
+    <g id="Section-Forgotten-Favorites" transform="translate(0, 410)">
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="26" font-weight="700">Forgotten favorites</text>
+      <!-- Row of Preview Blocks -->
+      <g transform="translate(0, 52)">
+        <rect width="240" height="150" rx="6" fill="#18181B" />
+        <rect x="260" y="0" width="240" height="150" rx="6" fill="#27272A" />
+        <rect x="520" y="0" width="240" height="150" rx="6" fill="#18181B" />
+        <rect x="780" y="0" width="240" height="150" rx="6" fill="#27272A" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 4. PINNED BOTTOM PLAYER BAR (EXACT REHBARA FROM REF)    -->
+  <!-- ======================================================== -->
+  <g id="Bottom-Player-Bar" transform="translate(0, 888)">
+    <rect width="1440" height="72" fill="#212121" />
+
+    <!-- Continuous Red Top Edge Scrubber -->
+    <g id="Scrubber">
+      <rect width="1440" height="2" fill="#383838" />
+      <rect width="80" height="2" fill="#FF0000" />
+      <circle cx="80" cy="1" r="5" fill="#FF0000" />
+    </g>
+
+    <!-- LEFT: Controls & Timestamp -->
+    <g id="Left-Controls" transform="translate(16, 20)">
+      <!-- Previous Track -->
+      <polygon points="12,4 2,12 12,20" fill="#FFFFFF" />
+      <rect x="0" y="4" width="2" height="16" fill="#FFFFFF" />
+
+      <!-- Pause Button (Two vertical white bars) -->
+      <g transform="translate(32, 0)">
+        <rect x="4" y="4" width="4" height="16" rx="1" fill="#FFFFFF" />
+        <rect x="14" y="4" width="4" height="16" rx="1" fill="#FFFFFF" />
+      </g>
+
+      <!-- Next Track -->
+      <g transform="translate(68, 0)">
+        <polygon points="2,4 12,12 2,20" fill="#FFFFFF" />
+        <rect x="12" y="4" width="2" height="16" fill="#FFFFFF" />
+      </g>
+
+      <!-- Timestamp: 0:08 / 2:54 -->
+      <text x="96" y="17" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">0:08 / 2:54</text>
+    </g>
+
+    <!-- CENTER-LEFT: Currently Playing (Rehbara) -->
+    <g id="Current-Track-Card" transform="translate(380, 12)">
+      <!-- 48x48 Album Thumbnail -->
+      <rect width="48" height="48" rx="2" fill="url(#art-rehbara)" />
+      <!-- Track Title & Metadata -->
+      <text x="60" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Rehbara</text>
+      <text x="60" y="38" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Abhijeet Srivastava &amp; Shayra Apoorva • Rehbara • 2026</text>
+
+      <!-- Action Icons: Thumbs Down, Thumbs Up, Bookmark, Queue, 3-Dots -->
+      <g transform="translate(420, 14)">
+        <!-- Dislike -->
+        <path d="M12 2H4C3.5 2 3 2.5 3 3L1 8C1 8.2 1 8.3 1 8.5V10C1 10.6 1.4 11 2 11H6L5.5 14L5.5 14.2C5.5 14.5 5.6 14.8 5.8 15L6.5 15.7L10.5 11.7C10.8 11.4 11 11 11 10.5V3C11 2.5 10.5 2 10 2M13 2V10H16V2H13Z" transform="scale(0.8)" fill="#AAAAAA" />
+        <!-- Like -->
+        <path d="M1 14H4V6H1V14ZM15 6.4C14.8 5.9 14.3 5.5 13.7 5.5H9.7L10.3 2.5L10.3 2.3C10.3 2 10.2 1.7 10 1.5L9.3 0.8L5.3 4.8C5.1 5 5 5.4 5 5.8V14C5 14.6 5.4 15 6 15H11.3C11.8 15 12.3 14.6 12.5 14.2L14.7 9.1C14.8 8.9 14.8 8.8 14.8 8.6V7.2C14.8 6.7 14.5 6.4 14.2 6.4L15 6.4Z" transform="translate(30, 0) scale(0.8)" fill="#AAAAAA" />
+        <!-- Bookmark / Add to playlist -->
+        <path d="M4 2H14C14.5 2 15 2.5 15 3V15L9.5 12.5L4 15V3C4 2.5 4.5 2 5 2Z" transform="translate(62, 0) scale(0.8)" stroke="#AAAAAA" stroke-width="1.6" fill="none" />
+        <!-- Queue / List -->
+        <g transform="translate(94, 2)">
+          <line x1="0" y1="3" x2="16" y2="3" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" />
+          <line x1="0" y1="8" x2="16" y2="8" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" />
+          <line x1="0" y1="13" x2="10" y2="13" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" />
+        </g>
+        <!-- 3-Dots -->
+        <g transform="translate(126, 2)">
+          <circle cx="2" cy="3" r="1.5" fill="#AAAAAA" /><circle cx="2" cy="8" r="1.5" fill="#AAAAAA" /><circle cx="2" cy="13" r="1.5" fill="#AAAAAA" />
+        </g>
+      </g>
+    </g>
+
+    <!-- RIGHT: Volume & Toggles -->
+    <g id="Right-Controls" transform="translate(1160, 20)">
+      <!-- Volume Speaker + Slider -->
+      <path d="M2 6H5L9 2V16L5 12H2V6Z" fill="#AAAAAA" />
+      <g transform="translate(18, 7)">
+        <rect width="70" height="3" rx="1.5" fill="#555555" />
+        <rect width="40" height="3" rx="1.5" fill="#FFFFFF" />
+        <circle cx="40" cy="1.5" r="4.5" fill="#FFFFFF" />
+      </g>
+      <!-- Repeat -->
+      <g transform="translate(110, 0)">
+        <path d="M14 2L16 4L14 6M2 7V6C2 4.9 2.9 4 4 4H16M4 14L2 12L4 10M16 9V10C16 11.1 15.1 12 14 12H2" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      </g>
+      <!-- Shuffle -->
+      <g transform="translate(142, 0)">
+        <path d="M2 12L5 12L10 4L15 4M13 2L15 4L13 6M2 4L4 4M10 12L15 12M13 10L15 12L13 14" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      </g>
+      <!-- Down/Up Chevron (Click to expand player) -->
+      <g id="Chevron-Expand" transform="translate(174, 0)">
+        <polyline points="2,14 7,9 12,14" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+[package]
+name = "sources"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rustic_core = { path = "../rustic_core" }
+async-trait = "0.1"
+thiserror = "2.0.19"
+tracing = "0.1.44"
+reqwest = { version = "0.12", features = ["json", "cookies"] }
+rspotify = { version = "0.13", features = ["cli", "client-reqwest"] }
+sha1 = "0.10"
+regex = "1.10"
+tokio = { version = "1.38", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"

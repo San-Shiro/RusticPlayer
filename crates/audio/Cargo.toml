@@ -1,0 +1,39 @@
+[package]
+name = "audio"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+profiling = []
+
+[dependencies]
+cpal = { version = "0.17", default-features = false }
+rtrb = "0.3"
+symphonia = { version = "0.5.4", features = ["all"] }
+rubato = "0.16"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "stream", "blocking"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+thiserror = "2"
+tracing = "0.1"
+blake3 = "1"
+parking_lot = "0.12"
+tokio = { version = "1", features = ["sync", "process", "time"] }
+bytes = "1"
+atomic_float = "1"
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+lru = "0.13"
+futures-util = "0.3"
+
+[dev-dependencies]
+hound = "3.5"
+proptest = "1"
+wiremock = "0.6"
+assert_no_alloc = "1"
+tempfile = "3"
+actix-web = "4"
+actix-http = "3"
+futures-util = "0.3"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
+[package.metadata.cpal]
+# ALSA for Linux cpal

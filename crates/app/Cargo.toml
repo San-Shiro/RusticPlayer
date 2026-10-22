@@ -1,0 +1,26 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+
+[dependencies]
+rustic_core = { path = "../rustic_core" }
+engine = { path = "../engine" }
+ui-kit = { path = "../ui-kit" }
+tokio = { version = "1.0", features = ["full"] }
+gpui = { workspace = true }
+gpui_platform = { workspace = true }
+thiserror = "2.0.19"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["registry", "fmt", "std"] }
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+audio = { path = "../audio" }
+sources = { path = "../sources" }
+reqwest = { version = "0.12", features = ["json"] }
+sha1 = "0.10"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

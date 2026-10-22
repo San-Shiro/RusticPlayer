@@ -1,0 +1,403 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- YouTube Music Color Scheme -->
+    <linearGradient id="yt-album-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#4C0519" />
+    </linearGradient>
+    <linearGradient id="yt-album-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="yt-album-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#082F49" />
+    </linearGradient>
+    <linearGradient id="yt-album-4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+    <linearGradient id="yt-album-5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+    <linearGradient id="yt-album-6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333EA" />
+      <stop offset="100%" stop-color="#3B0764" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background: YouTube Music Pitch Black -->
+  <rect width="1440" height="960" fill="#030303" />
+
+  <!-- ======================================================== -->
+  <!-- 1. TOP NAVIGATION BAR (H: 64px)                          -->
+  <!-- ======================================================== -->
+  <g id="Top-Navigation-Bar">
+    <rect width="1440" height="64" fill="#030303" />
+    <line x1="0" y1="64" x2="1440" y2="64" stroke="#212121" stroke-width="1" />
+
+    <!-- Left: YouTube Music Logo -->
+    <g id="YouTube-Music-Logo" transform="translate(24, 18)">
+      <!-- Red Circle with Play Triangle -->
+      <circle cx="14" cy="14" r="13" fill="#FF0000" />
+      <circle cx="14" cy="14" r="8" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+      <polygon points="12,10 18,14 12,18" fill="#FFFFFF" />
+
+      <!-- Text: YouTube Music -->
+      <text x="34" y="19" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="18" font-weight="700" letter-spacing="-0.5">YouTube</text>
+      <text x="106" y="19" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="18" font-weight="400">Music</text>
+    </g>
+
+    <!-- Center Navigation Links -->
+    <g id="Nav-Links" transform="translate(230, 22)">
+      <text x="0" y="16" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="700">Home</text>
+      <text x="75" y="16" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">Explore</text>
+      <text x="160" y="16" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">Library</text>
+      <text x="240" y="16" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="15" font-weight="500">Upgrade</text>
+    </g>
+
+    <!-- Center Search Bar Capsule -->
+    <g id="Search-Bar" transform="translate(580, 12)">
+      <rect width="460" height="40" rx="20" fill="#212121" stroke="#383838" stroke-width="1" />
+      <!-- Magnifying Glass Icon -->
+      <circle cx="20" cy="20" r="6" stroke="#AAAAAA" stroke-width="1.8" fill="none" />
+      <line x1="25" y1="25" x2="29" y2="29" stroke="#AAAAAA" stroke-width="1.8" stroke-linecap="round" />
+      <text x="38" y="25" fill="#888888" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14">Search songs, albums, artists, podcasts</text>
+    </g>
+
+    <!-- Right Controls (Cast, Notifications, Profile) -->
+    <g id="User-Controls" transform="translate(1330, 16)">
+      <!-- Cast Icon -->
+      <g transform="translate(0, 6)">
+        <rect x="2" y="3" width="18" height="13" rx="2" fill="none" stroke="#AAAAAA" stroke-width="1.5" />
+        <path d="M2 13A3 3 0 0 1 5 16M2 9A7 7 0 0 1 9 16" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      </g>
+      <!-- Notifications Bell -->
+      <g transform="translate(36, 6)">
+        <path d="M10 2C7.8 2 6 3.8 6 6V11L4 13V14H16V13L14 11V6C14 3.8 12.2 2 10 2Z" fill="none" stroke="#AAAAAA" stroke-width="1.5" />
+        <path d="M8 15C8 16.1 8.9 17 10 17C11.1 17 12 16.1 12 15" stroke="#AAAAAA" stroke-width="1.5" fill="none" />
+      </g>
+      <!-- Profile Avatar -->
+      <circle cx="85" cy="16" r="16" fill="#3B82F6" />
+      <text x="80" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="700">K</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 2. MOOD & ACTIVITY FILTER CHIPS (H: 48px)                -->
+  <!-- ======================================================== -->
+  <g id="Activity-Chips" transform="translate(32, 78)">
+    <!-- Chip 1: Energize -->
+    <g transform="translate(0, 0)">
+      <rect width="88" height="34" rx="8" fill="#212121" stroke="#333333" stroke-width="1" />
+      <text x="16" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Energize</text>
+    </g>
+    <!-- Chip 2: Workout -->
+    <g transform="translate(98, 0)">
+      <rect width="86" height="34" rx="8" fill="#212121" stroke="#333333" stroke-width="1" />
+      <text x="16" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Workout</text>
+    </g>
+    <!-- Chip 3: Relax -->
+    <g transform="translate(194, 0)">
+      <rect width="72" height="34" rx="8" fill="#212121" stroke="#333333" stroke-width="1" />
+      <text x="16" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Relax</text>
+    </g>
+    <!-- Chip 4: Commute -->
+    <g transform="translate(276, 0)">
+      <rect width="94" height="34" rx="8" fill="#212121" stroke="#333333" stroke-width="1" />
+      <text x="16" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Commute</text>
+    </g>
+    <!-- Chip 5: Focus -->
+    <g transform="translate(380, 0)">
+      <rect width="74" height="34" rx="8" fill="#212121" stroke="#333333" stroke-width="1" />
+      <text x="16" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Focus</text>
+    </g>
+    <!-- Chip 6: Podcasts -->
+    <g transform="translate(464, 0)">
+      <rect width="90" height="34" rx="8" fill="#212121" stroke="#333333" stroke-width="1" />
+      <text x="16" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">Podcasts</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 3. SECTION: LISTEN AGAIN (CAROUSEL OF ALBUM COVERS)     -->
+  <!-- ======================================================== -->
+  <g id="Section-Listen-Again" transform="translate(32, 134)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500" letter-spacing="0.5">SIMILAR TO</text>
+    <text x="0" y="48" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="28" font-weight="700">Listen again</text>
+    <text x="1340" y="46" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="600">More</text>
+
+    <!-- 6 Album Cards (180x240) -->
+    <!-- Card 1 -->
+    <g transform="translate(0, 68)">
+      <rect width="180" height="180" rx="4" fill="url(#yt-album-1)" />
+      <!-- Play overlay button -->
+      <circle cx="90" cy="90" r="24" fill="#000000" fill-opacity="0.6" />
+      <polygon points="86,80 98,90 86,100" fill="#FFFFFF" />
+      <text x="0" y="204" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">After Hours</text>
+      <text x="0" y="222" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">The Weeknd • Album</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(230, 68)">
+      <rect width="180" height="180" rx="4" fill="url(#yt-album-2)" />
+      <circle cx="90" cy="90" r="24" fill="#000000" fill-opacity="0.6" />
+      <polygon points="86,80 98,90 86,100" fill="#FFFFFF" />
+      <text x="0" y="204" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Future Nostalgia</text>
+      <text x="0" y="222" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Dua Lipa • Album</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(460, 68)">
+      <rect width="180" height="180" rx="4" fill="url(#yt-album-3)" />
+      <circle cx="90" cy="90" r="24" fill="#000000" fill-opacity="0.6" />
+      <polygon points="86,80 98,90 86,100" fill="#FFFFFF" />
+      <text x="0" y="204" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Random Access Memories</text>
+      <text x="0" y="222" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Daft Punk • Album</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(690, 68)">
+      <rect width="180" height="180" rx="4" fill="url(#yt-album-4)" />
+      <circle cx="90" cy="90" r="24" fill="#000000" fill-opacity="0.6" />
+      <polygon points="86,80 98,90 86,100" fill="#FFFFFF" />
+      <text x="0" y="204" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Currents</text>
+      <text x="0" y="222" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Tame Impala • Album</text>
+    </g>
+
+    <!-- Card 5 -->
+    <g transform="translate(920, 68)">
+      <rect width="180" height="180" rx="4" fill="url(#yt-album-5)" />
+      <circle cx="90" cy="90" r="24" fill="#000000" fill-opacity="0.6" />
+      <polygon points="86,80 98,90 86,100" fill="#FFFFFF" />
+      <text x="0" y="204" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Dawn FM</text>
+      <text x="0" y="222" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">The Weeknd • Album</text>
+    </g>
+
+    <!-- Card 6 -->
+    <g transform="translate(1150, 68)">
+      <rect width="180" height="180" rx="4" fill="url(#yt-album-6)" />
+      <circle cx="90" cy="90" r="24" fill="#000000" fill-opacity="0.6" />
+      <polygon points="86,80 98,90 86,100" fill="#FFFFFF" />
+      <text x="0" y="204" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Discovery</text>
+      <text x="0" y="222" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Daft Punk • Album</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 4. SECTION: QUICK PICKS (4-COLUMN LIST)                 -->
+  <!-- ======================================================== -->
+  <g id="Section-Quick-Picks" transform="translate(32, 450)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12" font-weight="500" letter-spacing="0.5">START RADIO FROM A SONG</text>
+    <text x="0" y="48" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="28" font-weight="700">Quick picks</text>
+    <!-- Play All Button -->
+    <g transform="translate(1270, 24)">
+      <rect width="100" height="32" rx="16" fill="none" stroke="#444444" stroke-width="1" />
+      <text x="22" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="600">Play all</text>
+    </g>
+
+    <!-- Grid: 4 Columns x 3 Rows = 12 Items -->
+    <!-- Column 1 -->
+    <!-- Row 1 -->
+    <g transform="translate(0, 68)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-1)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Blinding Lights</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">The Weeknd • 2.4B plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(0, 132)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-2)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Levitating</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Dua Lipa • 1.1B plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(0, 196)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-3)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Get Lucky</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Daft Punk • 850M plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+
+    <!-- Column 2 -->
+    <!-- Row 1 -->
+    <g transform="translate(345, 68)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-4)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">The Less I Know The Better</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Tame Impala • 1.4B plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(345, 132)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-5)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Save Your Tears</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">The Weeknd • 1.8B plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(345, 196)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-6)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">One More Time</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Daft Punk • 620M plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+
+    <!-- Column 3 -->
+    <!-- Row 1 -->
+    <g transform="translate(690, 68)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-1)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Starboy</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">The Weeknd, Daft Punk</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(690, 132)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-2)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Don't Start Now</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Dua Lipa • 2.1B plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(690, 196)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-3)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Instant Crush</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Daft Punk, Julian Casablancas</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+
+    <!-- Column 4 -->
+    <!-- Row 1 -->
+    <g transform="translate(1035, 68)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-4)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Borderline</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Tame Impala • 540M plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(1035, 132)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-5)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Sacrifice</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">The Weeknd • 320M plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(1035, 196)">
+      <rect width="320" height="56" rx="4" fill="transparent" />
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-6)" />
+      <text x="60" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Harder Better Faster</text>
+      <text x="60" y="40" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">Daft Punk • 780M plays</text>
+      <circle cx="304" cy="24" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="28" r="1.5" fill="#AAAAAA" /><circle cx="304" cy="32" r="1.5" fill="#AAAAAA" />
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 5. PINNED BOTTOM PLAYER BAR (H: 72px, SOLID #212121)    -->
+  <!-- ======================================================== -->
+  <g id="Pinned-Bottom-Player-Bar" transform="translate(0, 888)">
+    <!-- Main Bar Body -->
+    <rect width="1440" height="72" fill="#212121" />
+
+    <!-- Continuous Top Scrubber Bar (YouTube Red Accent) -->
+    <g id="Scrubber-Track">
+      <rect width="1440" height="2" fill="#383838" />
+      <rect width="520" height="2" fill="#FF0000" />
+      <!-- Red circular playhead thumb -->
+      <circle cx="520" cy="1" r="5" fill="#FF0000" />
+    </g>
+
+    <!-- LEFT: Currently Playing Track Details -->
+    <g id="Player-Track-Info" transform="translate(16, 12)">
+      <!-- Album Cover 48x48 -->
+      <rect width="48" height="48" rx="2" fill="url(#yt-album-1)" />
+
+      <!-- Title & Artist -->
+      <text x="60" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="14" font-weight="600">Blinding Lights</text>
+      <text x="60" y="38" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="12">The Weeknd • After Hours</text>
+
+      <!-- Thumbs Down Icon -->
+      <g transform="translate(260, 14)">
+        <path d="M15 3H6C5.2 3 4.5 3.5 4.2 4.2L1.1 11.4C1 11.6 1 11.8 1 12V14C1 15.1 1.9 16 3 16H8.3L7.5 19.8L7.5 20.1C7.5 20.5 7.7 20.9 7.9 21.1L8.9 22L14.4 16.5C14.8 16.1 15 15.6 15 15V3ZM17 3V15H21V3H17Z" transform="scale(0.7)" fill="#AAAAAA" />
+      </g>
+      <!-- Thumbs Up Icon (Active) -->
+      <g transform="translate(288, 14)">
+        <path d="M1 21H5V9H1V21ZM20.8 9.6C20.5 8.9 19.8 8.4 19 8.4H13.7L14.5 4.6L14.5 4.3C14.5 3.9 14.3 3.5 14.1 3.3L13.1 2.4L7.6 7.9C7.2 8.3 7 8.8 7 9.4V21C7 22.1 7.9 23 9 23H16.3C17.1 23 17.8 22.5 18.1 21.8L21.2 14.6C21.3 14.4 21.3 14.2 21.3 14V12C21.3 10.9 20.4 10 19.3 10L20.8 9.6Z" transform="scale(0.7)" fill="#FFFFFF" />
+      </g>
+      <!-- 3-Dots Menu -->
+      <g transform="translate(318, 20)">
+        <circle cx="2" cy="4" r="1.5" fill="#AAAAAA" /><circle cx="2" cy="8" r="1.5" fill="#AAAAAA" /><circle cx="2" cy="12" r="1.5" fill="#AAAAAA" />
+      </g>
+    </g>
+
+    <!-- CENTER: Transport Playback Controls & Timestamp -->
+    <g id="Player-Transport-Controls" transform="translate(620, 16)">
+      <!-- Previous Track -->
+      <g transform="translate(0, 10)">
+        <polygon points="12,2 2,10 12,18" fill="#FFFFFF" />
+        <rect x="0" y="2" width="2" height="16" fill="#FFFFFF" />
+      </g>
+
+      <!-- Center Play/Pause Button (Solid White Circle with Pause Icon) -->
+      <g transform="translate(38, 0)">
+        <circle cx="20" cy="20" r="20" fill="#FFFFFF" />
+        <!-- Black Pause Bars -->
+        <rect x="13" y="12" width="4" height="16" rx="1" fill="#030303" />
+        <rect x="23" y="12" width="4" height="16" rx="1" fill="#030303" />
+      </g>
+
+      <!-- Next Track -->
+      <g transform="translate(98, 10)">
+        <polygon points="2,2 12,10 2,18" fill="#FFFFFF" />
+        <rect x="12" y="2" width="2" height="16" fill="#FFFFFF" />
+      </g>
+
+      <!-- Elapsed & Total Time -->
+      <text x="136" y="26" fill="#AAAAAA" font-family="-apple-system, BlinkMacSystemFont, 'Roboto', sans-serif" font-size="13" font-weight="500">01:45 / 03:20</text>
+    </g>
+
+    <!-- RIGHT: Additional Controls & Volume -->
+    <g id="Player-Right-Controls" transform="translate(1180, 18)">
+      <!-- Volume Speaker Icon -->
+      <g transform="translate(0, 8)">
+        <path d="M2 7H6L11 3V17L6 13H2V7Z" fill="#AAAAAA" />
+        <path d="M13 6C14.5 7.5 14.5 12.5 13 14" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Volume Slider Track -->
+      <g transform="translate(22, 16)">
+        <rect width="80" height="3" rx="1.5" fill="#555555" />
+        <rect width="52" height="3" rx="1.5" fill="#FFFFFF" />
+        <circle cx="52" cy="1.5" r="4.5" fill="#FFFFFF" />
+      </g>
+
+      <!-- Repeat Icon -->
+      <g transform="translate(126, 8)">
+        <path d="M16 2L18 4L16 6M2 7V6C2 4.9 2.9 4 4 4H18M4 16L2 14L4 12M18 11V12C18 13.1 17.1 14 16 14H2" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+
+      <!-- Shuffle Icon -->
+      <g transform="translate(162, 8)">
+        <path d="M2 14L6 14L12 4L18 4M15 1L18 4L15 7M2 4L5 4M13 14L18 14M15 11L18 14L15 17" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+
+      <!-- Up-Chevron (Expand Queue/Lyrics Panel) -->
+      <g transform="translate(200, 8)">
+        <polyline points="4,12 10,6 16,12" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </g>
+    </g>
+  </g>
+</svg>
