@@ -64,37 +64,6 @@ crates/
 
 ---
 
-## 🚀 Building & Running
-
-### Prerequisites
-
-- **Rust toolchain** (1.80+ or latest stable): [rustup.rs](https://rustup.rs/)
-- **C/C++ Build Tools**: MSVC (on Windows) or GCC/Clang with ALSA/Pulse & Vulkan/DirectX headers (on Linux/Windows)
-
-### Run the Desktop App
-
-```bash
-# Clone the repository
-git clone https://github.com/San-Shiro/RusticPlayer.git
-cd RusticPlayer
-
-# Run the desktop application
-cargo run -p app --release
-```
-
-Or on Windows:
-```cmd
-run_app.bat
-```
-
-### Running Test Suite
-
-```bash
-cargo test --workspace
-```
-
----
-
 ## 🗺️ Roadmap Ahead
 
 - [x] Lock-free audio engine & DAC-synced master clock
