@@ -22,6 +22,14 @@ Just as **Zed** (and **Zen**) proved that the best way to forge a next-generatio
 
 ---
 
+## 🌍 The Ecosystem Gap & Impact
+
+- **Extending GPUI Beyond Code Editors**: While Zed's GPUI proved Rust can render at 120+ FPS on the GPU, the ecosystem lacks a general-purpose consumer design system on top of it. RusticPlayer builds `crates/ui-kit`—an atomic component library with iGPU backdrop blurs, dynamic palette extraction, and fluid layout primitives—making GPUI viable for everyday consumer apps.
+- **Unifying Real-Time Systems & UI in Full-Stack Rust**: Media software traditionally splits C++ audio engines from JS/Qt frontends. RusticPlayer proves Rust can serve as a single unified full-stack language—from lock-free `rtrb`/`CPAL` hardware DAC callbacks and `Rubato` resampling all the way up to declarative GPU shaders and synchronized Jam sessions.
+- **Filling the Multi-Platform Native UI Vacancy**: Rust has long excelled at backend and systems programming while lacking a cohesive, hardware-accelerated UI stack for cross-platform consumer apps—forcing developers to fall back on heavy web wrappers (Electron/WebViews) or fragmented platform-specific bindings. By driving rendering directly through the **integrated GPU (iGPU)**, RusticPlayer establishes a unified, write-once native UI foundation that delivers 120Hz responsiveness with minimal memory and power overhead across desktop, handheld, and future mobile targets.
+
+---
+
 ## ⚡ Highlights & Features
 
 - **🖥️ iGPU-First Desktop Engine**: Native hardware-accelerated rendering with sub-millisecond frame times, dynamic artwork palette shaders, and zero Electron/WebView overhead.
